@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#121212', accent: '#0079b9', cta: '#007bb8', ctaHover: '#33BFFF', surface: '#1E1E1E', surfaceAlt: '#2C2C2C', textMain: '#FFFFFF', textMuted: '#B3B3B3' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--tw-gradient-from, #fff), var(--tw-gradient-to, #ccc));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .noise::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .counter { display: inline-block; }
+  </style>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <title>Industries We Serve — Test Biz</title>
+  <meta name="description" content="Showcase tailored solutions for different industries to help potential clients see how Test Biz can meet their specific needs.">
+  <meta property="og:title" content="Industries We Serve — Test Biz">
+  <meta property="og:description" content="Showcase tailored solutions for different industries to help potential clients see how Test Biz can meet their specific needs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
+<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,30,0.8)] py-4 px-6 transition-all duration-300 z-50 shadow-md'><div class='flex items-center justify-between'><a href='/' class='text-accent font-heading text-xl'>Test Biz</a><div class='hidden md:flex space-x-6'><a href='/' class='{{ACTIVE:/}}'>Home</a><a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a><a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a><a href='/industries.html' class='{{ACTIVE:/industries.html}}'>Industries</a><a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a></div><button id='hamburger' class='md:hidden text-textMain focus:outline-none'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg></button><a href='/contact.html' class='ml-4 px-4 py-2 bg-cta text-surface rounded-lg hover:bg-ctaHover transition-shadow shadow-lg hover:shadow-accent'>Get in Touch</a></div><div id='mobile-menu' class='hidden absolute top-full left-0 w-full bg-[rgba(30,30,30,0.95)] py-4'><a href='/' class='block px-4 py-2 {{ACTIVE:/}}'>Home</a><a href='/about.html' class='block px-4 py-2 {{ACTIVE:/about.html}}'>About</a><a href='/services.html' class='block px-4 py-2 {{ACTIVE:/services.html}}'>Services</a><a href='/industries.html' class='block px-4 py-2 {{ACTIVE:/industries.html}}'>Industries</a><a href='/contact.html' class='block px-4 py-2 {{ACTIVE:/contact.html}}'>Contact</a></div></nav>
+<main class="bg-gradient-to-b from-black to-gray-950 text-textMain font-body">
+  <!-- Hero Section -->
+  <section id="industries-intro" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden" data-aos="fade-up">
+    <div class="absolute inset-0">
+      <div class="bg-gradient-to-br from-primary via-accent to-secondary w-full h-full blur-3xl opacity-50 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+      <h1 class="text-4xl md:text-6xl font-heading font-extrabold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-8" data-aos="fade-up" data-aos-duration="1000">
+        Test Biz - Innovating Tomorrow, Today
+      </h1>
+      <p class="text-lg md:text-xl" style="color: #374151;" data-aos="fade-up" data-aos-delay="200">
+        Empowering industries with tailored, future-ready solutions. Explore how Test Biz transforms businesses across healthcare, finance, manufacturing, and retail.
+      </p>
+    </div>
+  </section>
+
+  <!-- Industry-Specific Solutions Section -->
+  <section id="industry-specific-solutions" class="bg-surfaceAlt py-24 md:py-32" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12">Industry-Specific Solutions</h2>
+      <!-- Grid of Industries -->
+      <div class="grid gap-12 md:gap-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Healthcare -->
+        <article class="p-6 bg-surface rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="text-xl font-heading font-bold" style="color: #1e40af; margin-bottom: 1rem;">Healthcare</h3>
+          <p style="color: #374151;">Streamlined patient data management with AI-driven solutions, ensuring efficiency and accuracy in every interaction.</p>
+        </article>
+        <!-- Finance -->
+        <article class="p-6 bg-surface rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-heading font-bold" style="color: #1e40af; margin-bottom: 1rem;">Finance</h3>
+          <p style="color: #374151;">Elevate financial operations with secure, scalable, and innovative tools for data analytics and risk management.</p>
+        </article>
+        <!-- Manufacturing -->
+        <article class="p-6 bg-surface rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-heading font-bold" style="color: #1e40af; margin-bottom: 1rem;">Manufacturing</h3>
+          <p style="color: #374151;">Boost productivity with IoT-enabled processes and real-time monitoring to optimize your operations.</p>
+        </article>
+        <!-- Retail -->
+        <article class="p-6 bg-surface rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-xl font-heading font-bold" style="color: #1e40af; margin-bottom: 1rem;">Retail</h3>
+          <p style="color: #374151;">Enhance customer experiences with personalized solutions, from inventory management to intelligent marketing strategies.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="relative bg-gradient-to-br from-primary via-accent to-secondary py-24 md:py-32 text-center text-textMain" data-aos="fade-up">
+    <div class="absolute inset-0">
+      <div class="bg-gradient-to-br from-primary via-accent to-secondary w-full h-full blur-3xl opacity-50 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">Ready to Transform Your Industry?</h2>
+      <p class="text-lg md:text-xl" style="color: #374151; margin-bottom: 2rem;">Let us tailor cutting-edge solutions for your unique business needs. Discover how Test Biz can drive innovation in your industry.</p>
+      <a href="/contact" class="inline-block" style="background-color: #1f2937; color: #ffffff; font-weight: bold; padding: 1rem 2rem; border-radius: 0.5rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease, box-shadow 0.2s ease;" onmouseover="this.style.backgroundColor='#111827'; this.style.boxShadow='0 6px 8px rgba(0, 0, 0, 0.15)'; this.style.transform='translateY(-4px)';" onmouseout="this.style.backgroundColor='#1f2937'; this.style.boxShadow='0 4px 6px rgba(0, 0, 0, 0.1)'; this.style.transform='translateY(0)';">
+        Request a Custom Proposal
+      </a>
+    </div>
+  </section>
+</main>
+<footer class='bg-surfaceAlt py-12 px-6 text-textMuted'><div class='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'><div><h3 class='text-lg text-textMain font-heading mb-4'>Test Biz</h3><p class='leading-relaxed'>Innovating Tomorrow, Today</p></div><div><h3 class='text-lg text-textMain font-heading mb-4'>Quick Links</h3><ul><li><a href='/' class='hover:text-accent'>Home</a></li><li><a href='/about.html' class='hover:text-accent'>About</a></li><li><a href='/services.html' class='hover:text-accent'>Services</a></li><li><a href='/industries.html' class='hover:text-accent'>Industries</a></li><li><a href='/contact.html' class='hover:text-accent'>Contact</a></li></ul></div><div><h3 class='text-lg text-textMain font-heading mb-4'>Follow Us</h3><div class='flex space-x-4'><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18.364 5.636a9 9 0 11-12.728 12.728 9 9 0 0112.728-12.728z'/><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15.232 15.232a4 4 0 01-5.464-5.464'/></svg></a><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M16.318 2.318a4.5 4.5 0 00-6.36 0L3 9.636V15h5.364l6.36 6.36a4.5 4.5 0 006.36-6.36L16.318 2.318z'/></svg></a><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 4h16v16H4z'/><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 4l16 16'/></svg></a></div></div></div><p class='text-center mt-8'>&copy; 2026 Test Biz. Built by <a href='https://ajayadesign.github.io' class='text-accent hover:underline'>AjayaDesign</a></p></footer>
+<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<script>
+  AOS.init({ duration: 800, once: true, offset: 80 });
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target || el.textContent, 10);
+    if (isNaN(target)) return;
+    let current = 0;
+    const step = Math.max(1, Math.ceil(target / 60));
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { el.textContent = target.toLocaleString(); clearInterval(timer); }
+      else { el.textContent = current.toLocaleString(); }
+    }, 25);
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = pct + '%';
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('back-to-top').style.opacity = window.scrollY > 400 ? '1' : '0';
+  });
+</script>
+</body>
+</html>

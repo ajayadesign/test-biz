@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#121212', accent: '#0079b9', cta: '#007bb8', ctaHover: '#33BFFF', surface: '#1E1E1E', surfaceAlt: '#2C2C2C', textMain: '#FFFFFF', textMuted: '#B3B3B3' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--tw-gradient-from, #fff), var(--tw-gradient-to, #ccc));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .noise::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .counter { display: inline-block; }
+  </style>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <title>Home — Test Biz</title>
+  <meta name="description" content="Introduce Test Biz, highlight key tech innovations, and drive interest in exploring services.">
+  <meta property="og:title" content="Home — Test Biz">
+  <meta property="og:description" content="Introduce Test Biz, highlight key tech innovations, and drive interest in exploring services.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Test Biz",
+  "description": "Innovating Tomorrow, Today"
+}</script>
+
+
+</head>
+<body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
+<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,30,0.8)] py-4 px-6 transition-all duration-300 z-50 shadow-md'><div class='flex items-center justify-between'><a href='/' class='text-accent font-heading text-xl'>Test Biz</a><div class='hidden md:flex space-x-6'><a href='/' class='{{ACTIVE:/}}'>Home</a><a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a><a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a><a href='/industries.html' class='{{ACTIVE:/industries.html}}'>Industries</a><a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a></div><button id='hamburger' class='md:hidden text-textMain focus:outline-none'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg></button><a href='/contact.html' class='ml-4 px-4 py-2 bg-cta text-surface rounded-lg hover:bg-ctaHover transition-shadow shadow-lg hover:shadow-accent'>Get in Touch</a></div><div id='mobile-menu' class='hidden absolute top-full left-0 w-full bg-[rgba(30,30,30,0.95)] py-4'><a href='/' class='block px-4 py-2 {{ACTIVE:/}}'>Home</a><a href='/about.html' class='block px-4 py-2 {{ACTIVE:/about.html}}'>About</a><a href='/services.html' class='block px-4 py-2 {{ACTIVE:/services.html}}'>Services</a><a href='/industries.html' class='block px-4 py-2 {{ACTIVE:/industries.html}}'>Industries</a><a href='/contact.html' class='block px-4 py-2 {{ACTIVE:/contact.html}}'>Contact</a></div></nav>
+<main>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen bg-gradient-to-br from-primary via-accent to-secondary flex items-center justify-center text-center text-white">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute top-1/4 left-1/3 w-96 h-96 bg-accent rounded-full blur-3xl opacity-30 animate-pulse"></div>
+      <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-primary rounded-full blur-3xl opacity-30 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 px-4">
+      <h1 class="text-4xl md:text-6xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="1000">
+        Test Biz - Innovating Tomorrow, Today
+      </h1>
+      <p class="mt-4 text-lg md:text-xl font-body" style="color: #333;" data-aos="fade-up" data-aos-delay="200">
+        Pioneering the future of technology for transformative results.
+      </p>
+      <a href="#features" class="inline-block mt-6 px-6 py-3 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition" style="background-color: #004080;" data-aos="fade-up" data-aos-delay="400">
+        Explore Our Solutions
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-24 bg-surfaceAlt" style="color: #333;" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-heading text-center mb-12">Cutting-Edge Technologies</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="p-6 bg-surface rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="text-xl font-heading mb-4">AI-Driven Analytics</h3>
+          <p class="font-body" style="color: #333;">Leverage the power of artificial intelligence for actionable insights and smarter decisions.</p>
+        </article>
+        <article class="p-6 bg-surface rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-heading mb-4">IoT Solutions</h3>
+          <p class="font-body" style="color: #333;">Connect and optimize devices for seamless automation and real-time data tracking.</p>
+        </article>
+        <article class="p-6 bg-surface rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-heading mb-4">Cloud Integration</h3>
+          <p class="font-body" style="color: #333;">Scalable and secure cloud solutions tailored to your business needs.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Overview Section -->
+  <section id="industries-overview" class="py-24 bg-surface" style="color: #333;" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-heading text-center mb-12">Industries We Serve</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="text-xl font-heading mb-4">Healthcare</h3>
+          <p class="font-body" style="color: #333;">Revolutionizing patient care with advanced analytics and telemedicine solutions.</p>
+        </article>
+        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-heading mb-4">Finance</h3>
+          <p class="font-body" style="color: #333;">Secure, scalable systems for financial institutions to drive innovation and trust.</p>
+        </article>
+        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-heading mb-4">Manufacturing</h3>
+          <p class="font-body" style="color: #333;">Streamlining operations through smart factory solutions and IoT integration.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-24 bg-surfaceAlt" style="color: #333;" data-aos="fade-up">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-heading mb-12">What Our Clients Say</h2>
+      <blockquote class="text-2xl font-heading italic" style="color: #004080;" data-aos="fade-up" data-aos-delay="0">
+        “Test Biz transformed our business with their IoT solutions. We saw a 45% improvement in operational efficiency.”
+      </blockquote>
+      <p class="font-body text-lg" style="color: #333;">— Sarah J., Operations Manager at GlobalTech</p>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="py-24 bg-gradient-to-br from-primary via-accent to-secondary text-center text-white" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-heading bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent mb-6">
+        Ready to Innovate?
+      </h2>
+      <p class="font-body text-lg md:text-xl" style="color: #333;" class="mb-6">Partner with us to revolutionize your business processes with cutting-edge technology.</p>
+      <a href="/contact" class="px-8 py-4 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition" style="background-color: #004080;">
+        Contact Us to Get Started
+      </a>
+    </div>
+  </section>
+
+</main>
+<footer class='bg-surfaceAlt py-12 px-6 text-textMuted'><div class='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'><div><h3 class='text-lg text-textMain font-heading mb-4'>Test Biz</h3><p class='leading-relaxed'>Innovating Tomorrow, Today</p></div><div><h3 class='text-lg text-textMain font-heading mb-4'>Quick Links</h3><ul><li><a href='/' class='hover:text-accent'>Home</a></li><li><a href='/about.html' class='hover:text-accent'>About</a></li><li><a href='/services.html' class='hover:text-accent'>Services</a></li><li><a href='/industries.html' class='hover:text-accent'>Industries</a></li><li><a href='/contact.html' class='hover:text-accent'>Contact</a></li></ul></div><div><h3 class='text-lg text-textMain font-heading mb-4'>Follow Us</h3><div class='flex space-x-4'><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18.364 5.636a9 9 0 11-12.728 12.728 9 9 0 0112.728-12.728z'/><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15.232 15.232a4 4 0 01-5.464-5.464'/></svg></a><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M16.318 2.318a4.5 4.5 0 00-6.36 0L3 9.636V15h5.364l6.36 6.36a4.5 4.5 0 006.36-6.36L16.318 2.318z'/></svg></a><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 4h16v16H4z'/><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 4l16 16'/></svg></a></div></div></div><p class='text-center mt-8'>&copy; 2026 Test Biz. Built by <a href='https://ajayadesign.github.io' class='text-accent hover:underline'>AjayaDesign</a></p></footer>
+<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<script>
+  AOS.init({ duration: 800, once: true, offset: 80 });
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target || el.textContent, 10);
+    if (isNaN(target)) return;
+    let current = 0;
+    const step = Math.max(1, Math.ceil(target / 60));
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { el.textContent = target.toLocaleString(); clearInterval(timer); }
+      else { el.textContent = current.toLocaleString(); }
+    }, 25);
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = pct + '%';
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('back-to-top').style.opacity = window.scrollY > 400 ? '1' : '0';
+  });
+</script>
+</body>
+</html>
