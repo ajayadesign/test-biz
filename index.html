@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#121212', accent: '#0079b9', cta: '#007bb8', ctaHover: '#33BFFF', surface: '#1E1E1E', surfaceAlt: '#2C2C2C', textMain: '#FFFFFF', textMuted: '#B3B3B3' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#007caf', cta: '#007caf', ctaHover: '#33C9F0', surface: '#121212', surfaceAlt: '#1C1C1C', textMain: '#FFFFFF', textMuted: '#A0A0A0' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -43,9 +43,9 @@
   </style>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <title>Home — Test Biz</title>
-  <meta name="description" content="Introduce Test Biz, highlight key tech innovations, and drive interest in exploring services.">
+  <meta name="description" content="Introduce Test Biz, highlight key offerings, and encourage visitors to explore further.">
   <meta property="og:title" content="Home — Test Biz">
-  <meta property="og:description" content="Introduce Test Biz, highlight key tech innovations, and drive interest in exploring services.">
+  <meta property="og:description" content="Introduce Test Biz, highlight key offerings, and encourage visitors to explore further.">
   <meta property="og:type" content="website">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script type="application/ld+json">{
@@ -58,99 +58,115 @@
 
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,30,0.8)] py-4 px-6 transition-all duration-300 z-50 shadow-md'><div class='flex items-center justify-between'><a href='/' class='text-accent font-heading text-xl'>Test Biz</a><div class='hidden md:flex space-x-6'><a href='/' class='{{ACTIVE:/}}'>Home</a><a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a><a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a><a href='/industries.html' class='{{ACTIVE:/industries.html}}'>Industries</a><a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a></div><button id='hamburger' class='md:hidden text-textMain focus:outline-none'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg></button><a href='/contact.html' class='ml-4 px-4 py-2 bg-cta text-surface rounded-lg hover:bg-ctaHover transition-shadow shadow-lg hover:shadow-accent'>Get in Touch</a></div><div id='mobile-menu' class='hidden absolute top-full left-0 w-full bg-[rgba(30,30,30,0.95)] py-4'><a href='/' class='block px-4 py-2 {{ACTIVE:/}}'>Home</a><a href='/about.html' class='block px-4 py-2 {{ACTIVE:/about.html}}'>About</a><a href='/services.html' class='block px-4 py-2 {{ACTIVE:/services.html}}'>Services</a><a href='/industries.html' class='block px-4 py-2 {{ACTIVE:/industries.html}}'>Industries</a><a href='/contact.html' class='block px-4 py-2 {{ACTIVE:/contact.html}}'>Contact</a></div></nav>
+<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(18,18,18,0.8)] shadow-lg z-50 transition-all duration-300'> <div class='max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:py-6'> <a href='/' class='text-primary font-heading text-xl'>Test Biz</a> <div class='hidden md:flex space-x-6'> <a href='/' class='{{ACTIVE:/}}'>Home</a> <a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a> <a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a> <a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a> </div> <button id='mobileMenuButton' class='md:hidden text-primary'>☰</button> <a href='/contact.html' class='bg-cta text-surface px-4 py-2 rounded-lg shadow-lg hover:bg-ctaHover hover:shadow-xl transition'>Get Started</a> </div> <div id='mobileMenu' class='hidden absolute top-full w-full bg-surfaceAlt text-textMain shadow-lg'> <div class='flex flex-col space-y-4 px-6 py-4'> <a href='/' class='{{ACTIVE:/}}'>Home</a> <a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a> <a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a> <a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a> </div> </div> </nav>
 <main>
-
   <!-- Hero Section -->
-  <section id="hero" class="relative min-h-screen bg-gradient-to-br from-primary via-accent to-secondary flex items-center justify-center text-center text-white">
-    <div class="absolute inset-0 overflow-hidden">
-      <div class="absolute top-1/4 left-1/3 w-96 h-96 bg-accent rounded-full blur-3xl opacity-30 animate-pulse"></div>
-      <div class="absolute bottom-1/3 right-1/4 w-72 h-72 bg-primary rounded-full blur-3xl opacity-30 animate-pulse"></div>
+  <section id="hero" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-accent to-secondary text-center text-white">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl opacity-50 animate-pulse"></div>
+      <div class="absolute bottom-1/3 right-1/3 w-80 h-80 bg-primary rounded-full blur-3xl opacity-50 animate-pulse"></div>
     </div>
-    <div class="relative z-10 px-4">
-      <h1 class="text-4xl md:text-6xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="1000">
+    <div class="relative z-10 px-6">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="1000" style="color: #1a202c;">
         Test Biz - Innovating Tomorrow, Today
       </h1>
-      <p class="mt-4 text-lg md:text-xl font-body" style="color: #333;" data-aos="fade-up" data-aos-delay="200">
-        Pioneering the future of technology for transformative results.
+      <p class="mt-6 text-lg md:text-xl font-body" data-aos="fade-up" data-aos-delay="200" style="color: #2d3748;">
+        Empowering businesses with cutting-edge technology solutions for a brighter future.
       </p>
-      <a href="#features" class="inline-block mt-6 px-6 py-3 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition" style="background-color: #004080;" data-aos="fade-up" data-aos-delay="400">
+      <a href="#features" class="mt-8 inline-block px-8 py-4 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition focus:outline-none focus:ring-4 focus:ring-accent focus:ring-opacity-50" data-aos="fade-up" data-aos-delay="400" style="background-color: #1a202c; color: #ffffff;">
         Explore Our Solutions
       </a>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-24 bg-surfaceAlt" style="color: #333;" data-aos="fade-up">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-heading text-center mb-12">Cutting-Edge Technologies</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <article class="p-6 bg-surface rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
-          <h3 class="text-xl font-heading mb-4">AI-Driven Analytics</h3>
-          <p class="font-body" style="color: #333;">Leverage the power of artificial intelligence for actionable insights and smarter decisions.</p>
-        </article>
-        <article class="p-6 bg-surface rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-heading mb-4">IoT Solutions</h3>
-          <p class="font-body" style="color: #333;">Connect and optimize devices for seamless automation and real-time data tracking.</p>
-        </article>
-        <article class="p-6 bg-surface rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-heading mb-4">Cloud Integration</h3>
-          <p class="font-body" style="color: #333;">Scalable and secure cloud solutions tailored to your business needs.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Industries Overview Section -->
-  <section id="industries-overview" class="py-24 bg-surface" style="color: #333;" data-aos="fade-up">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-heading text-center mb-12">Industries We Serve</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <section id="features" class="bg-surface py-24 md:py-32" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading text-primary text-center mb-12">Why Choose Test Biz?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
-          <h3 class="text-xl font-heading mb-4">Healthcare</h3>
-          <p class="font-body" style="color: #333;">Revolutionizing patient care with advanced analytics and telemedicine solutions.</p>
+          <div class="mb-4">
+            <img loading="lazy" src="/icons/innovation.svg" alt="Icon representing innovative solutions" class="w-12 h-12 mx-auto">
+          </div>
+          <h3 class="text-xl font-heading text-primary mb-2 text-center">Innovative Solutions</h3>
+          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
+            Stay ahead with groundbreaking technology tailored to your needs.
+          </p>
         </article>
         <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-heading mb-4">Finance</h3>
-          <p class="font-body" style="color: #333;">Secure, scalable systems for financial institutions to drive innovation and trust.</p>
+          <div class="mb-4">
+            <img loading="lazy" src="/icons/security.svg" alt="Icon representing unmatched security" class="w-12 h-12 mx-auto">
+          </div>
+          <h3 class="text-xl font-heading text-primary mb-2 text-center">Unmatched Security</h3>
+          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
+            Protect your business with cutting-edge, future-proof security systems.
+          </p>
         </article>
         <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-heading mb-4">Manufacturing</h3>
-          <p class="font-body" style="color: #333;">Streamlining operations through smart factory solutions and IoT integration.</p>
+          <div class="mb-4">
+            <img loading="lazy" src="/icons/support.svg" alt="Icon representing 24/7 support availability" class="w-12 h-12 mx-auto">
+          </div>
+          <h3 class="text-xl font-heading text-primary mb-2 text-center">24/7 Support</h3>
+          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
+            Our dedicated team is always available to assist you.
+          </p>
+        </article>
+        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="300">
+          <div class="mb-4">
+            <img loading="lazy" src="/icons/scalability.svg" alt="Icon representing scalable solutions" class="w-12 h-12 mx-auto">
+          </div>
+          <h3 class="text-xl font-heading text-primary mb-2 text-center">Scalable Solutions</h3>
+          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
+            Grow effortlessly with our flexible and scalable technologies.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="py-24 bg-surfaceAlt" style="color: #333;" data-aos="fade-up">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-heading mb-12">What Our Clients Say</h2>
-      <blockquote class="text-2xl font-heading italic" style="color: #004080;" data-aos="fade-up" data-aos-delay="0">
-        “Test Biz transformed our business with their IoT solutions. We saw a 45% improvement in operational efficiency.”
-      </blockquote>
-      <p class="font-body text-lg" style="color: #333;">— Sarah J., Operations Manager at GlobalTech</p>
+  <!-- About Section -->
+  <section id="about" class="bg-surfaceAlt py-24 md:py-32" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h2 class="text-3xl md:text-4xl font-heading text-primary mb-6">About Test Biz</h2>
+          <p class="font-body text-textMain mb-6" style="color: #2d3748;">
+            With over 15 years of experience, Test Biz specializes in delivering innovative technology solutions that empower businesses to thrive in a constantly evolving world. Our mission is simple: to future-proof your business with cutting-edge tools and strategies.
+          </p>
+          <p class="font-body text-textMain" style="color: #2d3748;">
+            Trusted by 500+ companies worldwide, we pride ourselves on our expertise, reliability, and commitment to excellence.
+          </p>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="200">
+          <img loading="lazy" src="/images/about-us.jpg" alt="Team collaborating on innovative technology solutions" class="rounded-lg shadow-lg w-full">
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section id="cta" class="py-24 bg-gradient-to-br from-primary via-accent to-secondary text-center text-white" data-aos="fade-up">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl md:text-5xl font-heading bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent mb-6">
-        Ready to Innovate?
+  <!-- Call-to-Action Section -->
+  <section id="cta" class="relative bg-gradient-to-br from-primary via-accent to-secondary py-24 md:py-32 text-center text-white" data-aos="fade-up">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-1/3 left-1/3 w-96 h-96 bg-white/20 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent rounded-full blur-3xl opacity-50 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 px-6">
+      <h2 class="text-3xl md:text-4xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6" style="color: #1a202c;">
+        Ready to Future-Proof Your Business?
       </h2>
-      <p class="font-body text-lg md:text-xl" style="color: #333;" class="mb-6">Partner with us to revolutionize your business processes with cutting-edge technology.</p>
-      <a href="/contact" class="px-8 py-4 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition" style="background-color: #004080;">
-        Contact Us to Get Started
+      <p class="font-body text-lg md:text-xl mb-8" style="color: #2d3748;">
+        Get in touch with our experts today and discover how we can help you innovate and thrive.
+      </p>
+      <a href="/contact" class="px-8 py-4 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition focus:outline-none focus:ring-4 focus:ring-accent focus:ring-opacity-50" style="background-color: #1a202c; color: #ffffff;">
+        Contact Us
       </a>
     </div>
   </section>
-
 </main>
-<footer class='bg-surfaceAlt py-12 px-6 text-textMuted'><div class='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8'><div><h3 class='text-lg text-textMain font-heading mb-4'>Test Biz</h3><p class='leading-relaxed'>Innovating Tomorrow, Today</p></div><div><h3 class='text-lg text-textMain font-heading mb-4'>Quick Links</h3><ul><li><a href='/' class='hover:text-accent'>Home</a></li><li><a href='/about.html' class='hover:text-accent'>About</a></li><li><a href='/services.html' class='hover:text-accent'>Services</a></li><li><a href='/industries.html' class='hover:text-accent'>Industries</a></li><li><a href='/contact.html' class='hover:text-accent'>Contact</a></li></ul></div><div><h3 class='text-lg text-textMain font-heading mb-4'>Follow Us</h3><div class='flex space-x-4'><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M18.364 5.636a9 9 0 11-12.728 12.728 9 9 0 0112.728-12.728z'/><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M15.232 15.232a4 4 0 01-5.464-5.464'/></svg></a><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M16.318 2.318a4.5 4.5 0 00-6.36 0L3 9.636V15h5.364l6.36 6.36a4.5 4.5 0 006.36-6.36L16.318 2.318z'/></svg></a><a href='#' class='hover:text-accent'><svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 4h16v16H4z'/><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 4l16 16'/></svg></a></div></div></div><p class='text-center mt-8'>&copy; 2026 Test Biz. Built by <a href='https://ajayadesign.github.io' class='text-accent hover:underline'>AjayaDesign</a></p></footer>
-<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
-<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
-<script>const hamburger = document.getElementById('hamburger');const mobileMenu = document.getElementById('mobile-menu');hamburger.addEventListener('click', () => {mobileMenu.classList.toggle('hidden');});</script>
+<footer class='bg-surfaceAlt text-textMuted py-12'> <div class='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6'> <div> <h3 class='text-primary font-heading text-xl mb-4'>Test Biz</h3> <p>Innovating Tomorrow, Today</p> </div> <div> <h4 class='text-primary font-heading text-lg mb-4'>Quick Links</h4> <ul class='space-y-2'> <li><a href='/' class='hover:text-primary transition'>Home</a></li> <li><a href='/about.html' class='hover:text-primary transition'>About</a></li> <li><a href='/services.html' class='hover:text-primary transition'>Services</a></li> <li><a href='/contact.html' class='hover:text-primary transition'>Contact</a></li> </ul> </div> <div> <h4 class='text-primary font-heading text-lg mb-4'>Follow Us</h4> <div class='flex space-x-4'> <a href='#' class='hover:text-primary transition'>Twitter</a> <a href='#' class='hover:text-primary transition'>LinkedIn</a> <a href='#' class='hover:text-primary transition'>GitHub</a> </div> </div> </div> <div class='mt-8 text-center'> <p>&copy; 2026 Test Biz. Built by <a href='https://ajayadesign.github.io' class='text-primary hover:underline'>AjayaDesign</a>.</p> </div> </footer>
+<script> const mobileMenuButton = document.getElementById('mobileMenuButton'); const mobileMenu = document.getElementById('mobileMenu'); mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<script> const mobileMenuButton = document.getElementById('mobileMenuButton'); const mobileMenu = document.getElementById('mobileMenu'); mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<script> const mobileMenuButton = document.getElementById('mobileMenuButton'); const mobileMenu = document.getElementById('mobileMenu'); mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
 <script>
   AOS.init({ duration: 800, once: true, offset: 80 });
   document.querySelectorAll('.counter').forEach(el => {
