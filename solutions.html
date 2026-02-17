@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: '#1A1A40', accent: '#5D5FEF', cta: '#5D5FEF', ctaHover: '#8A8BFF', surface: '#1E1E2C', surfaceAlt: '#2A2A40', textMain: '#FFFFFF', textMuted: '#A3A3C2' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--tw-gradient-from, #fff), var(--tw-gradient-to, #ccc));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .noise::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+    }
+    .counter { display: inline-block; }
+  </style>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <title>Solutions — Test Biz</title>
+  <meta name="description" content="Showcase the specific technologies and services provided by the business.">
+  <meta property="og:title" content="Solutions — Test Biz">
+  <meta property="og:description" content="Showcase the specific technologies and services provided by the business.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+
+</head>
+<body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
+<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,44,0.8)] py-4 px-8 flex items-center justify-between transition-all duration-300 ease-in-out'> <div class='text-primary font-heading text-lg'>Test Biz</div> <ul class='hidden md:flex space-x-6'> <li><a href='index.html' class='text-textMuted hover:text-primary transition'>Home</a></li> <li><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a></li> <li><a href='solutions.html' class='text-primary font-bold'>Solutions</a></li> <li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li> </ul> <button class='bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition shadow-lg'>Get Started</button> <button class='md:hidden text-textMain focus:outline-none' id='mobile-menu-toggle'>☰</button> </nav>
+<main class="font-body text-textMain bg-surface">
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-primary via-accent to-secondary">
+    <div class="absolute inset-0">
+      <div class="absolute top-0 left-0 w-[400px] h-[400px] bg-gradient-to-r from-primary via-accent to-secondary blur-3xl rounded-full animate-pulse opacity-40"></div>
+      <div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-r from-accent via-primary to-secondary blur-3xl rounded-full animate-pulse opacity-40"></div>
+    </div>
+    <h1 class="relative z-10 text-4xl md:text-6xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="1000">
+      Innovating Tomorrow, Today
+    </h1>
+    <p class="relative z-10 mt-4 text-lg md:text-xl" style="color: #333333;" data-aos="fade-up" data-aos-delay="200">
+      Cutting-edge technology solutions for a future-focused world.
+    </p>
+    <a href="contact.html" class="relative z-10 mt-8 px-6 py-3 text-lg font-heading text-white" style="background-color: #003d80;" data-aos="fade-up" data-aos-delay="300">
+      Request a Demo
+    </a>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="py-24 md:py-32 bg-surfaceAlt" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-3xl md:text-4xl font-heading text-center bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent" data-aos="fade-up">
+        Our Innovative Solutions
+      </h2>
+      <p class="mt-6 text-center" style="color: #333333;" data-aos="fade-up" data-aos-delay="100">
+        Discover how our cutting-edge technologies empower businesses to achieve their goals faster and smarter.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div class="text-center p-6 bg-white/10 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1581092336642-3c3e5ea1cd5c?w=800&q=80" alt="AI-driven analytics illustration showing data insights" class="mx-auto mb-4 w-20 h-20 object-contain">
+          <h3 class="text-xl font-heading text-primary">AI-driven Analytics</h3>
+          <p class="mt-2" style="color: #333333;">Unlock insights from your data with our powerful AI technologies.</p>
+        </div>
+        <div class="text-center p-6 bg-white/10 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1559028012-df2bdf3dc94f?w=800&q=80" alt="Cloud integration illustration showing cloud computing" class="mx-auto mb-4 w-20 h-20 object-contain">
+          <h3 class="text-xl font-heading text-primary">Cloud Integration</h3>
+          <p class="mt-2" style="color: #333333;">Seamlessly migrate and optimize your operations in the cloud.</p>
+        </div>
+        <div class="text-center p-6 bg-white/10 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80" alt="Automation solutions illustration showing workflow automation" class="mx-auto mb-4 w-20 h-20 object-contain">
+          <h3 class="text-xl font-heading text-primary">Automation Solutions</h3>
+          <p class="mt-2" style="color: #333333;">Streamline workflows and improve efficiency with our automation tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies Section -->
+  <section id="case-studies" class="py-24 md:py-32 bg-surface" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-3xl md:text-4xl font-heading text-center bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up">
+        Proven Success Stories
+      </h2>
+      <p class="mt-6 text-center" style="color: #333333;" data-aos="fade-up" data-aos-delay="100">
+        See how businesses like yours have transformed with our solutions.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+        <article class="bg-white/10 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1565120130276-94a1a33c1e0e?w=800&q=80" alt="Case study showcasing enterprise AI transformation" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-heading text-primary">Enterprise AI Transformation</h3>
+          <p class="mt-2" style="color: #333333;">How a global enterprise increased efficiency by 40% with our AI tools.</p>
+        </article>
+        <article class="bg-white/10 p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=800&q=80" alt="Case study showing successful cloud migration for a startup" class="w-full h-48 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-heading text-primary">Cloud Migration Success</h3>
+          <p class="mt-2" style="color: #333333;">Learn how we helped a startup scale globally in just 6 months.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="py-24 md:py-32 bg-gradient-to-br from-primary via-accent to-secondary text-center text-white" data-aos="fade-up">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-3xl md:text-4xl font-heading bg-clip-text text-transparent bg-gradient-to-r from-accent to-primary" data-aos="fade-up">
+        Ready to Innovate?
+      </h2>
+      <p class="mt-4 text-lg md:text-xl" style="color: #d6d6d6;" data-aos="fade-up" data-aos-delay="100">
+        Let's create impactful solutions tailored to your business needs.
+      </p>
+      <a href="contact.html" class="mt-8 inline-block px-8 py-4 text-lg font-heading text-white" style="background-color: #003d80;" data-aos="fade-up" data-aos-delay="200">
+        Get My Free Demo
+      </a>
+    </div>
+  </section>
+</main>
+<footer class='bg-surfaceAlt py-12 px-8 text-textMuted'> <div class='grid grid-cols-1 md:grid-cols-3 gap-8'> <div> <h3 class='text-primary font-heading text-lg mb-4'>Test Biz</h3> <p class='text-textMuted'>Innovating Tomorrow, Today</p> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Quick Links</h4> <ul> <li><a href='index.html' class='hover:text-primary transition'>Home</a></li> <li><a href='about.html' class='hover:text-primary transition'>About</a></li> <li><a href='solutions.html' class='hover:text-primary transition'>Solutions</a></li> <li><a href='contact.html' class='hover:text-primary transition'>Contact</a></li> </ul> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Follow Us</h4> <ul class='flex space-x-4'> <li><a href='https://twitter.com' class='hover:text-primary transition'>Twitter</a></li> <li><a href='https://linkedin.com' class='hover:text-primary transition'>LinkedIn</a></li> <li><a href='https://github.com' class='hover:text-primary transition'>GitHub</a></li> </ul> </div> </div> <div class='mt-8 text-center'> <p>Built by <a href='https://ajayadesign.github.io' class='text-primary hover:underline'>AjayaDesign</a></p> <p>© 2026 Test Biz</p> </div> </footer>
+<script> const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<script> const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<script>/* js-safety-guard */
+try {
+ const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); 
+} catch(e) { console.warn('Script error:', e); }
+</script>
+<script>
+  AOS.init({ duration: 800, once: true, offset: 80 });
+  document.querySelectorAll('.counter').forEach(el => {
+    const target = parseInt(el.dataset.target || el.textContent, 10);
+    if (isNaN(target)) return;
+    let current = 0;
+    const step = Math.max(1, Math.ceil(target / 60));
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { el.textContent = target.toLocaleString(); clearInterval(timer); }
+      else { el.textContent = current.toLocaleString(); }
+    }, 25);
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = pct + '%';
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('back-to-top').style.opacity = window.scrollY > 400 ? '1' : '0';
+  });
+</script>
+</body>
+</html>

@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#007caf', cta: '#007caf', ctaHover: '#33C9F0', surface: '#121212', surfaceAlt: '#1C1C1C', textMain: '#FFFFFF', textMuted: '#A0A0A0' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#1A1A40', accent: '#5D5FEF', cta: '#5D5FEF', ctaHover: '#8A8BFF', surface: '#1E1E2C', surfaceAlt: '#2A2A40', textMain: '#FFFFFF', textMuted: '#A3A3C2' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -43,11 +43,11 @@
   </style>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <title>Home — Test Biz</title>
-  <meta name="description" content="Introduce Test Biz, highlight key offerings, and encourage visitors to explore further.">
+  <meta name="description" content="Introduce the brand, highlight key tech solutions, and drive immediate interest.">
   <meta property="og:title" content="Home — Test Biz">
-  <meta property="og:description" content="Introduce Test Biz, highlight key offerings, and encourage visitors to explore further.">
+  <meta property="og:description" content="Introduce the brand, highlight key tech solutions, and drive immediate interest.">
   <meta property="og:type" content="website">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -58,115 +58,99 @@
 
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(18,18,18,0.8)] shadow-lg z-50 transition-all duration-300'> <div class='max-w-7xl mx-auto flex items-center justify-between px-6 py-4 lg:py-6'> <a href='/' class='text-primary font-heading text-xl'>Test Biz</a> <div class='hidden md:flex space-x-6'> <a href='/' class='{{ACTIVE:/}}'>Home</a> <a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a> <a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a> <a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a> </div> <button id='mobileMenuButton' class='md:hidden text-primary'>☰</button> <a href='/contact.html' class='bg-cta text-surface px-4 py-2 rounded-lg shadow-lg hover:bg-ctaHover hover:shadow-xl transition'>Get Started</a> </div> <div id='mobileMenu' class='hidden absolute top-full w-full bg-surfaceAlt text-textMain shadow-lg'> <div class='flex flex-col space-y-4 px-6 py-4'> <a href='/' class='{{ACTIVE:/}}'>Home</a> <a href='/about.html' class='{{ACTIVE:/about.html}}'>About</a> <a href='/services.html' class='{{ACTIVE:/services.html}}'>Services</a> <a href='/contact.html' class='{{ACTIVE:/contact.html}}'>Contact</a> </div> </div> </nav>
+<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,44,0.8)] py-4 px-8 flex items-center justify-between transition-all duration-300 ease-in-out'> <div class='text-primary font-heading text-lg'>Test Biz</div> <ul class='hidden md:flex space-x-6'> <li><a href='index.html' class='text-primary font-bold'>Home</a></li> <li><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a></li> <li><a href='solutions.html' class='text-textMuted hover:text-primary transition'>Solutions</a></li> <li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li> </ul> <button class='bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition shadow-lg'>Get Started</button> <button class='md:hidden text-textMain focus:outline-none' id='mobile-menu-toggle'>☰</button> </nav>
 <main>
   <!-- Hero Section -->
-  <section id="hero" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-accent to-secondary text-center text-white">
-    <div class="absolute inset-0 z-0">
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl opacity-50 animate-pulse"></div>
-      <div class="absolute bottom-1/3 right-1/3 w-80 h-80 bg-primary rounded-full blur-3xl opacity-50 animate-pulse"></div>
+  <section id="hero" class="relative min-h-screen bg-gradient-to-br from-primary via-accent to-secondary flex items-center justify-center text-center text-white font-body" data-aos="fade-up">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute bg-gradient-to-br from-primary via-accent to-secondary w-[200%] h-[200%] rounded-full blur-3xl animate-pulse"></div>
     </div>
-    <div class="relative z-10 px-6">
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="1000" style="color: #1a202c;">
+    <div class="z-10 max-w-3xl px-6">
+      <h1 class="text-5xl md:text-7xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" data-aos="fade-up" data-aos-duration="1000">
         Test Biz - Innovating Tomorrow, Today
       </h1>
-      <p class="mt-6 text-lg md:text-xl font-body" data-aos="fade-up" data-aos-delay="200" style="color: #2d3748;">
-        Empowering businesses with cutting-edge technology solutions for a brighter future.
+      <p class="mt-6 text-lg md:text-xl" style="color: #f5f5f5;" data-aos="fade-up" data-aos-delay="200">
+        Pioneering the future with cutting-edge technology and impactful solutions.
       </p>
-      <a href="#features" class="mt-8 inline-block px-8 py-4 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition focus:outline-none focus:ring-4 focus:ring-accent focus:ring-opacity-50" data-aos="fade-up" data-aos-delay="400" style="background-color: #1a202c; color: #ffffff;">
+      <a href="solutions.html" class="inline-block mt-8 px-6 py-3 text-lg font-bold text-white" style="background-color: #003d80;" data-aos="fade-up" data-aos-delay="400">
         Explore Our Solutions
       </a>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="bg-surface py-24 md:py-32" data-aos="fade-up">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-heading text-primary text-center mb-12">Why Choose Test Biz?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
-          <div class="mb-4">
-            <img loading="lazy" src="/icons/innovation.svg" alt="Icon representing innovative solutions" class="w-12 h-12 mx-auto">
-          </div>
-          <h3 class="text-xl font-heading text-primary mb-2 text-center">Innovative Solutions</h3>
-          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
-            Stay ahead with groundbreaking technology tailored to your needs.
-          </p>
-        </article>
-        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
-          <div class="mb-4">
-            <img loading="lazy" src="/icons/security.svg" alt="Icon representing unmatched security" class="w-12 h-12 mx-auto">
-          </div>
-          <h3 class="text-xl font-heading text-primary mb-2 text-center">Unmatched Security</h3>
-          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
-            Protect your business with cutting-edge, future-proof security systems.
-          </p>
-        </article>
-        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
-          <div class="mb-4">
-            <img loading="lazy" src="/icons/support.svg" alt="Icon representing 24/7 support availability" class="w-12 h-12 mx-auto">
-          </div>
-          <h3 class="text-xl font-heading text-primary mb-2 text-center">24/7 Support</h3>
-          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
-            Our dedicated team is always available to assist you.
-          </p>
-        </article>
-        <article class="p-6 bg-surfaceAlt rounded-3xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="300">
-          <div class="mb-4">
-            <img loading="lazy" src="/icons/scalability.svg" alt="Icon representing scalable solutions" class="w-12 h-12 mx-auto">
-          </div>
-          <h3 class="text-xl font-heading text-primary mb-2 text-center">Scalable Solutions</h3>
-          <p class="font-body text-textMuted text-center" style="color: #2d3748;">
-            Grow effortlessly with our flexible and scalable technologies.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="bg-surfaceAlt py-24 md:py-32" data-aos="fade-up">
-    <div class="container mx-auto px-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div data-aos="fade-up" data-aos-delay="100">
-          <h2 class="text-3xl md:text-4xl font-heading text-primary mb-6">About Test Biz</h2>
-          <p class="font-body text-textMain mb-6" style="color: #2d3748;">
-            With over 15 years of experience, Test Biz specializes in delivering innovative technology solutions that empower businesses to thrive in a constantly evolving world. Our mission is simple: to future-proof your business with cutting-edge tools and strategies.
-          </p>
-          <p class="font-body text-textMain" style="color: #2d3748;">
-            Trusted by 500+ companies worldwide, we pride ourselves on our expertise, reliability, and commitment to excellence.
-          </p>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="200">
-          <img loading="lazy" src="/images/about-us.jpg" alt="Team collaborating on innovative technology solutions" class="rounded-lg shadow-lg w-full">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call-to-Action Section -->
-  <section id="cta" class="relative bg-gradient-to-br from-primary via-accent to-secondary py-24 md:py-32 text-center text-white" data-aos="fade-up">
-    <div class="absolute inset-0 z-0">
-      <div class="absolute top-1/3 left-1/3 w-96 h-96 bg-white/20 rounded-full blur-3xl opacity-50 animate-pulse"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent rounded-full blur-3xl opacity-50 animate-pulse"></div>
-    </div>
-    <div class="relative z-10 px-6">
-      <h2 class="text-3xl md:text-4xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6" style="color: #1a202c;">
-        Ready to Future-Proof Your Business?
+  <section id="features" class="bg-surfaceAlt py-16 md:py-24" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-heading text-primary mb-12 text-center">
+        Key Features That Drive Innovation
       </h2>
-      <p class="font-body text-lg md:text-xl mb-8" style="color: #2d3748;">
-        Get in touch with our experts today and discover how we can help you innovate and thrive.
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-surface p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1581092335429-8b200a2e6419?w=800&q=80" alt="AI-driven analytics icon representing data insights" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-xl font-heading text-primary mb-2">AI-Driven Insights</h3>
+          <p class="font-body" style="color: #4a5568;">
+            Harness the power of AI to make data-driven decisions with precision and speed.
+          </p>
+        </div>
+        <div class="bg-surface p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?w=800&q=80" alt="Cloud computing solutions icon representing scalability" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-xl font-heading text-primary mb-2">Cloud Computing</h3>
+          <p class="font-body" style="color: #4a5568;">
+            Scale your operations with secure, lightning-fast cloud solutions.
+          </p>
+        </div>
+        <div class="bg-surface p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1526378726399-1f411958e6f3?w=800&q=80" alt="Automation tools icon representing workflow efficiency" class="w-16 h-16 mx-auto mb-4">
+          <h3 class="text-xl font-heading text-primary mb-2">Automation Tools</h3>
+          <p class="font-body" style="color: #4a5568;">
+            Streamline workflows and boost efficiency with intelligent automation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-surface py-16 md:py-24" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-heading text-primary mb-12">
+        What Our Clients Say
+      </h2>
+      <blockquote class="relative bg-surfaceAlt p-8 rounded-lg shadow-md">
+        <p class="text-xl font-body italic" style="color: #4a5568;" data-aos="fade-up" data-aos-delay="0">
+          "Test Biz transformed our operations, enabling us to achieve a 40% increase in efficiency. Their innovative solutions are unmatched in the industry."
+        </p>
+        <cite class="block mt-6 font-heading text-lg" style="color: #1f2937;">– Alex Johnson, CEO of FutureTech Inc.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="relative bg-gradient-to-br from-primary via-accent to-secondary py-16 md:py-24 text-center text-white font-body" data-aos="fade-up">
+    <div class="absolute inset-0 overflow-hidden">
+      <div class="absolute bg-gradient-to-br from-primary via-accent to-secondary w-[200%] h-[200%] rounded-full blur-3xl animate-pulse"></div>
+    </div>
+    <div class="z-10 max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl md:text-5xl font-heading mb-6" data-aos="fade-up" data-aos-delay="0">
+        Ready to Shape the Future?
+      </h2>
+      <p class="text-lg md:text-xl" style="color: #f5f5f5;" data-aos="fade-up" data-aos-delay="200">
+        Discover how Test Biz can transform your business. Schedule a demo today.
       </p>
-      <a href="/contact" class="px-8 py-4 bg-cta text-white font-body text-lg rounded-lg hover:bg-ctaHover transition focus:outline-none focus:ring-4 focus:ring-accent focus:ring-opacity-50" style="background-color: #1a202c; color: #ffffff;">
-        Contact Us
+      <a href="contact.html" class="inline-block px-6 py-3 text-lg font-bold text-white" style="background-color: #003d80;" data-aos="fade-up" data-aos-delay="400">
+        Schedule My Demo
       </a>
     </div>
   </section>
 </main>
-<footer class='bg-surfaceAlt text-textMuted py-12'> <div class='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6'> <div> <h3 class='text-primary font-heading text-xl mb-4'>Test Biz</h3> <p>Innovating Tomorrow, Today</p> </div> <div> <h4 class='text-primary font-heading text-lg mb-4'>Quick Links</h4> <ul class='space-y-2'> <li><a href='/' class='hover:text-primary transition'>Home</a></li> <li><a href='/about.html' class='hover:text-primary transition'>About</a></li> <li><a href='/services.html' class='hover:text-primary transition'>Services</a></li> <li><a href='/contact.html' class='hover:text-primary transition'>Contact</a></li> </ul> </div> <div> <h4 class='text-primary font-heading text-lg mb-4'>Follow Us</h4> <div class='flex space-x-4'> <a href='#' class='hover:text-primary transition'>Twitter</a> <a href='#' class='hover:text-primary transition'>LinkedIn</a> <a href='#' class='hover:text-primary transition'>GitHub</a> </div> </div> </div> <div class='mt-8 text-center'> <p>&copy; 2026 Test Biz. Built by <a href='https://ajayadesign.github.io' class='text-primary hover:underline'>AjayaDesign</a>.</p> </div> </footer>
-<script> const mobileMenuButton = document.getElementById('mobileMenuButton'); const mobileMenu = document.getElementById('mobileMenu'); mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
-<script> const mobileMenuButton = document.getElementById('mobileMenuButton'); const mobileMenu = document.getElementById('mobileMenu'); mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
-<script> const mobileMenuButton = document.getElementById('mobileMenuButton'); const mobileMenu = document.getElementById('mobileMenu'); mobileMenuButton.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<footer class='bg-surfaceAlt py-12 px-8 text-textMuted'> <div class='grid grid-cols-1 md:grid-cols-3 gap-8'> <div> <h3 class='text-primary font-heading text-lg mb-4'>Test Biz</h3> <p class='text-textMuted'>Innovating Tomorrow, Today</p> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Quick Links</h4> <ul> <li><a href='index.html' class='hover:text-primary transition'>Home</a></li> <li><a href='about.html' class='hover:text-primary transition'>About</a></li> <li><a href='solutions.html' class='hover:text-primary transition'>Solutions</a></li> <li><a href='contact.html' class='hover:text-primary transition'>Contact</a></li> </ul> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Follow Us</h4> <ul class='flex space-x-4'> <li><a href='https://twitter.com' class='hover:text-primary transition'>Twitter</a></li> <li><a href='https://linkedin.com' class='hover:text-primary transition'>LinkedIn</a></li> <li><a href='https://github.com' class='hover:text-primary transition'>GitHub</a></li> </ul> </div> </div> <div class='mt-8 text-center'> <p>Built by <a href='https://ajayadesign.github.io' class='text-primary hover:underline'>AjayaDesign</a></p> <p>© 2026 Test Biz</p> </div> </footer>
+<script> const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<script> const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<script>/* js-safety-guard */
+try {
+ const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); 
+} catch(e) { console.warn('Script error:', e); }
+</script>
 <script>
   AOS.init({ duration: 800, once: true, offset: 80 });
   document.querySelectorAll('.counter').forEach(el => {

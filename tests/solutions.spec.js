@@ -1,16 +1,16 @@
 const { test, expect } = require('@playwright/test');
 const AxeBuilder = require('@axe-core/playwright').default;
 
-test.describe('Contact page (contact)', () => {
+test.describe('Solutions page (solutions)', () => {
   test('loads and has content', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     await expect(page.locator('body')).not.toBeEmpty();
     const h1 = page.locator('h1').first();
     if (await h1.count()) await expect(h1).toBeVisible();
   });
 
   test('no horizontal overflow', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     const overflow = await page.evaluate(
       () => document.documentElement.scrollWidth > document.documentElement.clientWidth
     );
@@ -18,7 +18,7 @@ test.describe('Contact page (contact)', () => {
   });
 
   test('axe accessibility — zero critical/serious violations', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
     await page.waitForTimeout(500);
     const results = await new AxeBuilder({ page })
@@ -28,7 +28,7 @@ test.describe('Contact page (contact)', () => {
       (v) => v.impact === 'critical' || v.impact === 'serious'
     );
     if (critical.length > 0) {
-      console.log('\n🔴 Critical/Serious violations on /contact.html:');
+      console.log('\n🔴 Critical/Serious violations on /solutions.html:');
       critical.forEach((v) => {
         console.log('  [' + v.impact + '] ' + v.id + ': ' + v.description);
         v.nodes.forEach((n) => console.log('    → ' + n.html.substring(0, 120)));
@@ -38,7 +38,7 @@ test.describe('Contact page (contact)', () => {
   });
 
   test('all links have valid href', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     const links = page.locator('a[href]');
     const count = await links.count();
     for (let i = 0; i < count; i++) {
@@ -49,13 +49,13 @@ test.describe('Contact page (contact)', () => {
   });
 
   test('SEO: exactly one h1 tag', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     const h1Count = await page.locator('h1').count();
     expect(h1Count, 'Page must have exactly 1 <h1> tag, found ' + h1Count).toBe(1);
   });
 
   test('SEO: heading hierarchy (no skipped levels)', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     const headings = await page.evaluate(() => {
       const els = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
       return Array.from(els).map(el => parseInt(el.tagName[1]));
@@ -67,7 +67,7 @@ test.describe('Contact page (contact)', () => {
   });
 
   test('SEO: all images have descriptive alt text', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     const images = page.locator('img');
     const count = await images.count();
     for (let i = 0; i < count; i++) {
@@ -78,7 +78,7 @@ test.describe('Contact page (contact)', () => {
   });
 
   test('SEO: page has a title tag', async ({ page }) => {
-    await page.goto('/contact.html');
+    await page.goto('/solutions.html');
     const title = await page.title();
     expect(title, 'Page must have a <title> tag').toBeTruthy();
     expect(title.length, 'Title too short: "' + title + '"').toBeGreaterThan(10);
