@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#00862b', cta: '#00862b', ctaHover: '#58D68D', surface: '#1C1C1C', surfaceAlt: '#121212', textMain: '#FFFFFF', textMuted: '#B0BEC5' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#007dac', cta: '#007dac', ctaHover: '#4FD8F5', surface: '#FFFFFF', surfaceAlt: '#F5F8FA', textMain: '#0D1F2D', textMuted: '#6B7C93' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -42,43 +42,46 @@
     .counter { display: inline-block; }
   </style>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <title>Contact Us — Test Biz</title>
-  <meta name="description" content="Provide an easy way for users to get in touch for inquiries, support, and collaboration.">
-  <meta property="og:title" content="Contact Us — Test Biz">
-  <meta property="og:description" content="Provide an easy way for users to get in touch for inquiries, support, and collaboration.">
+  <title>Contact — Test Biz</title>
+  <meta name="description" content="Provide a clear way for users to reach out, schedule demos, or request more information.">
+  <meta property="og:title" content="Contact — Test Biz">
+  <meta property="og:description" content="Provide a clear way for users to reach out, schedule demos, or request more information.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 
 </head>
-<body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class="fixed top-0 w-full backdrop-blur-xl bg-[rgba(28,28,28,0.8)] py-4 px-6 flex items-center justify-between transition-all duration-300 ease-in-out" id="mainNav"> <div class="flex items-center"> <a href="" class="text-primary font-heading text-xl">Test Biz</a> </div> <div class="hidden md:flex space-x-4"> <a href="" class="{{ACTIVE:home}}">Home</a> <a href="about.html" class="text-textMuted hover:text-primary transition">About</a> <a href="products.html" class="text-textMuted hover:text-primary transition">Products</a> <a href="contact.html" class="text-primary font-bold">Contact</a> </div> <button id="mobileMenuToggle" class="md:hidden text-textMuted hover:text-primary transition">☰</button> <a href="contact.html" class="bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition-shadow shadow-lg shadow-accent/50">Contact Us</a> </nav>
-<main>
+<body class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-textMain font-body antialiased overflow-x-hidden">
+<nav class="fixed top-0 left-0 right-0 bg-[rgba(255,255,255,0.8)] backdrop-blur-xl shadow-md transition-all duration-300" id="main-nav"><div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"><a href="" class="text-primary font-heading text-xl">Test Biz</a><ul class="hidden md:flex space-x-6"><li><a href="" class="{{ACTIVE:home}}">Home</a></li><li><a href="about.html" class="text-textMuted hover:text-primary transition">About</a></li><li><a href="solutions.html" class="text-textMuted hover:text-primary transition">Solutions</a></li><li><a href="contact.html" class="text-primary font-bold">Contact</a></li></ul><button class="md:hidden text-primary" id="hamburger-menu">☰</button><a href="contact.html" class="bg-cta text-white px-4 py-2 rounded-lg shadow-lg hover:bg-ctaHover transition">Get Started</a></div><div id="mobile-menu" class="hidden fixed top-0 left-0 w-full bg-[rgba(255,255,255,0.9)] backdrop-blur-xl z-50"><ul class="space-y-4 p-4"><li><a href="" class="{{ACTIVE:home}}">Home</a></li><li><a href="about.html" class="text-textMuted hover:text-primary transition">About</a></li><li><a href="solutions.html" class="text-textMuted hover:text-primary transition">Solutions</a></li><li><a href="contact.html" class="text-primary font-bold">Contact</a></li></ul></div></nav>
+<main class="font-body bg-surface text-textMain">
+
   <!-- Contact Form Section -->
-  <section id="contact-form" class="bg-surface min-h-screen py-24 md:py-32 relative" data-aos="fade-up">
-    <div class="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary opacity-20 blur-3xl animate-pulse"></div>
-    <div class="container mx-auto px-6 lg:px-12 relative z-10">
-      <h1 class="text-4xl md:text-6xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-8" data-aos="fade-up" data-aos-duration="1000" style="color: #000000;">
-        Test Biz - Contact Us Today
-      </h1>
-      <p class="text-lg font-body mb-12" data-aos="fade-up" data-aos-delay="200" style="color: #333333;">
-        We’re here to answer your questions, collaborate, or support your journey toward innovation.
-      </p>
-      <form action="https://example.com/contact" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="col-span-2 md:col-span-1">
-          <label for="name" class="block font-body mb-2" style="color: #000000;">Your Name</label>
-          <input type="text" id="name" name="name" class="w-full p-4 border border-gray-400 rounded-lg bg-surfaceAlt focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" placeholder="Enter your name" required />
+  <section id="contact-form" class="py-24 md:py-32 relative" data-aos="fade-up">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-accent to-secondary blur-3xl opacity-30"></div>
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-4xl lg:text-6xl font-heading" data-aos="fade-up" data-aos-duration="1000" style="color: #1a1a1a;">
+          Let's Build the Future Together
+        </h1>
+        <p class="mt-6 text-lg text-textMuted" data-aos="fade-up" data-aos-delay="200" style="color: #4d4d4d;">
+          Got questions or want to see our solutions in action? Reach out to us today, and let’s start innovating.
+        </p>
+      </div>
+      <form action="https://example.com/contact" method="POST" class="mt-12 max-w-2xl mx-auto bg-surfaceAlt p-8 rounded-lg shadow-lg backdrop-blur-xl bg-white/5 border border-white/10" data-aos="fade-up" data-aos-delay="300">
+        <div class="mb-6">
+          <label for="name" class="block text-sm font-medium text-textMain" style="color: #1a1a1a;">Name</label>
+          <input type="text" id="name" name="name" required class="mt-2 w-full p-3 rounded-md bg-surface border border-textMuted focus:ring-2 focus:ring-primary focus:outline-none">
         </div>
-        <div class="col-span-2 md:col-span-1">
-          <label for="email" class="block font-body mb-2" style="color: #000000;">Your Email</label>
-          <input type="email" id="email" name="email" class="w-full p-4 border border-gray-400 rounded-lg bg-surfaceAlt focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" placeholder="Enter your email" required />
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-textMain" style="color: #1a1a1a;">Email</label>
+          <input type="email" id="email" name="email" required class="mt-2 w-full p-3 rounded-md bg-surface border border-textMuted focus:ring-2 focus:ring-primary focus:outline-none">
         </div>
-        <div class="col-span-2">
-          <label for="message" class="block font-body mb-2" style="color: #000000;">Your Message</label>
-          <textarea id="message" name="message" rows="5" class="w-full p-4 border border-gray-400 rounded-lg bg-surfaceAlt focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50" placeholder="Enter your message" required></textarea>
+        <div class="mb-6">
+          <label for="message" class="block text-sm font-medium text-textMain" style="color: #1a1a1a;">Message</label>
+          <textarea id="message" name="message" rows="4" required class="mt-2 w-full p-3 rounded-md bg-surface border border-textMuted focus:ring-2 focus:ring-primary focus:outline-none"></textarea>
         </div>
-        <div class="col-span-2">
-          <button type="submit" class="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-accent text-white font-body font-bold hover:scale-[1.02] hover:shadow-xl transition" style="background-color: #003366; color: #ffffff;">
+        <div class="text-center">
+          <button type="submit" class="px-6 py-3 rounded-md text-white font-bold" style="background-color: #004085;">
             Send My Message
           </button>
         </div>
@@ -86,63 +89,52 @@
     </div>
   </section>
 
-  <!-- Location Details Section -->
-  <section id="location-details" class="bg-surfaceAlt py-24 md:py-32 relative" data-aos="fade-up">
-    <div class="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary opacity-20 blur-3xl animate-pulse"></div>
-    <div class="container mx-auto px-6 lg:px-12 relative z-10">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div data-aos="fade-up" data-aos-delay="100">
-          <h2 class="text-3xl font-heading mb-6" style="color: #000000;">Our Office</h2>
-          <p class="text-lg font-body mb-6" style="color: #333333;">
-            123 Innovation Drive, Tech City,<br />
-            Futureland, 56789
-          </p>
-          <p class="text-lg font-body" style="color: #333333;">
-            Open: Monday to Friday, 9 AM - 5 PM
-          </p>
+  <!-- Location Section -->
+  <section id="location" class="py-24 md:py-32 bg-surfaceAlt relative" data-aos="fade-up">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-accent via-primary to-secondary blur-3xl opacity-30"></div>
+    <div class="container mx-auto px-6 lg:px-12 text-center">
+      <h2 class="text-3xl lg:text-5xl font-heading" data-aos="fade-up" data-aos-duration="1000" style="color: #1a1a1a;">
+        Our Virtual Presence, Your Global Reach
+      </h2>
+      <p class="mt-6 text-lg text-textMuted" data-aos="fade-up" data-aos-delay="200" style="color: #4d4d4d;">
+        Wherever you are, our solutions are just a click away. Operating virtually, we empower businesses worldwide to innovate without limits.
+      </p>
+      <div class="mt-12 flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-full md:w-1/3 bg-surface p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition">
+          <h3 class="text-xl font-bold" style="color: #004085;">North America</h3>
+          <p class="mt-4 text-textMuted" style="color: #4d4d4d;">Serving clients across the US and Canada with tailored tech solutions.</p>
         </div>
-        <div>
-          <figure class="overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-1" data-aos="zoom-in">
-            <img loading="lazy" src="https://placehold.co/800x600/1a1a2e/ffffff?text=Map+Location" alt="Map showing the location of Test Biz office in Tech City" class="w-full h-auto" />
-          </figure>
+        <div class="w-full md:w-1/3 bg-surface p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition">
+          <h3 class="text-xl font-bold" style="color: #004085;">Europe</h3>
+          <p class="mt-4 text-textMuted" style="color: #4d4d4d;">Innovating with businesses from London to Berlin.</p>
+        </div>
+        <div class="w-full md:w-1/3 bg-surface p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition">
+          <h3 class="text-xl font-bold" style="color: #004085;">Asia-Pacific</h3>
+          <p class="mt-4 text-textMuted" style="color: #4d4d4d;">Scalable solutions for thriving markets in Asia.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Social Links Section -->
-  <section id="social-links" class="bg-surface py-24 md:py-32 relative" data-aos="fade-up">
-    <div class="absolute inset-0 bg-gradient-to-br from-primary via-accent to-secondary opacity-20 blur-3xl animate-pulse"></div>
-    <div class="container mx-auto px-6 lg:px-12 relative z-10 text-center">
-      <h2 class="text-3xl font-heading mb-12" data-aos="fade-up" data-aos-delay="100" style="color: #000000;">
-        Connect With Us
+  <section id="social-links" class="py-24 md:py-32 bg-surface relative" data-aos="fade-up">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-primary via-accent to-secondary blur-3xl opacity-30"></div>
+    <div class="container mx-auto px-6 lg:px-12 text-center">
+      <h2 class="text-3xl lg:text-5xl font-heading" data-aos="fade-up" data-aos-duration="1000" style="color: #1a1a1a;">
+        Stay Connected, Stay Ahead
       </h2>
-      <div class="flex justify-center space-x-6" data-aos="fade-up" data-aos-delay="200">
-        <a href="https://twitter.com/testbiz" target="_blank" rel="noopener" aria-label="Twitter" class="text-primary hover:text-accent transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.27 4.27 0 001.88-2.36 8.55 8.55 0 01-2.71 1.04 4.25 4.25 0 00-7.24 3.87 12.07 12.07 0 01-8.77-4.45 4.23 4.23 0 001.31 5.67 4.25 4.25 0 01-1.93-.54v.05a4.27 4.27 0 003.42 4.18 4.3 4.3 0 01-1.92.07 4.27 4.27 0 003.98 2.96 8.53 8.53 0 01-5.29 1.83A12.1 12.1 0 008 20.52c7.87 0 12.18-6.52 12.18-12.18 0-.19 0-.37-.01-.56.84-.6 1.56-1.35 2.14-2.2z" />
-          </svg>
-        </a>
-        <a href="https://linkedin.com/company/testbiz" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-primary hover:text-accent transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-.967 0-1.75-.784-1.75-1.75s.783-1.75 1.75-1.75 1.75.784 1.75 1.75-.783 1.75-1.75 1.75zm13.5 11.3h-3v-5c0-1.105-.896-2-2-2s-2 .895-2 2v5h-3v-10h3v1.354c.756-.675 1.84-1.354 3-1.354 2.209 0 4 1.791 4 4v6z" />
-          </svg>
-        </a>
-        <a href="https://facebook.com/testbiz" target="_blank" rel="noopener" aria-label="Facebook" class="text-primary hover:text-accent transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M22 12c0-5.514-4.485-10-10-10s-10 4.486-10 10c0 5.018 3.675 9.158 8.438 9.878v-6.988h-2.54v-2.89h2.54v-2.205c0-2.508 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.261c-1.246 0-1.632.774-1.632 1.566v1.874h2.773l-.443 2.89h-2.33v6.988c4.763-.72 8.438-4.86 8.438-9.878z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-</main>
-<footer class="bg-surfaceAlt text-textMuted py-8 px-6"> <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> <div> <h2 class="text-primary font-heading text-lg">Test Biz</h2> <p class="mt-2">Innovating the Future, Today</p> </div> <div> <h3 class="text-primary font-heading text-md">Quick Links</h3> <ul class="space-y-2 mt-2"> <li><a href="">Home</a></li> <li><a href="about.html">About</a></li> <li><a href="products.html">Products</a></li> <li><a href="contact.html">Contact</a></li> </ul> </div> <div> <h3 class="text-primary font-heading text-md">Follow Us</h3> <div class="flex space-x-4 mt-2"> <a href="https://twitter.com" class="hover:text-primary">Twitter</a> <a href="https://linkedin.com" class="hover:text-primary">LinkedIn</a> <a href="https://facebook.com" class="hover:text-primary">Facebook</a> </div> </div> </div> <div class="mt-6 text-center"> <p>&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="hover:text-primary">AjayaDesign</a>.</p> </div> </footer>
-<script> const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); </script>
-<script> const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); </script>
+      <p class="mt-6 text-lg text-textMuted" data-aos="fade-up" data-aos-delay="200" style="color: #4d4d4d;">
+        Follow us on social media for the latest updates and insights in cutting-edge technology.
+      </p>
+      <div class="mt-12 flex justify-center gap-6" data-aos="fade-up" data-aos-delay="300">
+        <a href="https://twitter.com" target="_blank" class="p-4 rounded-full" style="background-color: #1DA1F2; color: #ffffff; hover:scale-105 transition-transform hover:shadow-xl">
+          <span class="sr-only">Twitter</span>
+<footer class="bg-surfaceAlt py-8"><div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8"><div><h4 class="text-primary font-heading text-lg">About Us</h4><p class="text-textMuted">Innovating Tomorrow, Today</p></div><div><h4 class="text-primary font-heading text-lg">Quick Links</h4><ul class="space-y-2"><li><a href="" class="text-textMuted hover:text-primary transition">Home</a></li><li><a href="about.html" class="text-textMuted hover:text-primary transition">About</a></li><li><a href="solutions.html" class="text-textMuted hover:text-primary transition">Solutions</a></li><li><a href="contact.html" class="text-textMuted hover:text-primary transition">Contact</a></li></ul></div><div><h4 class="text-primary font-heading text-lg">Connect</h4><ul class="flex space-x-4"><li><a href="#" class="text-accent hover:text-primary transition"><i class="fab fa-twitter"></i></a></li><li><a href="#" class="text-accent hover:text-primary transition"><i class="fab fa-linkedin"></i></a></li><li><a href="#" class="text-accent hover:text-primary transition"><i class="fab fa-facebook"></i></a></li></ul></div></div><div class="mt-8 text-center text-textMuted">&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="text-accent hover:text-primary transition">AjayaDesign</a></div></footer>
+<script>document.getElementById('hamburger-menu').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
+<script>document.getElementById('hamburger-menu').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
 <script>/* js-safety-guard */
 try {
- const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); 
+document.getElementById('hamburger-menu').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });
 } catch(e) { console.warn('Script error:', e); }
 </script>
 <script>
