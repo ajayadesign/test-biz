@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#0070eb', accent: '#e12263', cta: '#0070eb', ctaHover: '#339CFF', surface: '#121212', surfaceAlt: '#1D1D1D', textMain: '#FFFFFF', textMuted: '#B0B0B0' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#007bbb', cta: '#007ACC', ctaHover: '#0099FF', surface: '#F5F7FA', surfaceAlt: '#E1E8ED', textMain: '#0D1F2D', textMuted: '#7A869A' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -43,110 +43,100 @@
   </style>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <title>Contact Us — Test Biz</title>
-  <meta name="description" content="Provide users with an easy way to get in touch or schedule a consultation.">
+  <meta name="description" content="Make it easy for potential clients or partners to get in touch.">
   <meta property="og:title" content="Contact Us — Test Biz">
-  <meta property="og:description" content="Provide users with an easy way to get in touch or schedule a consultation.">
+  <meta property="og:description" content="Make it easy for potential clients or partners to get in touch.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(18,18,18,0.8)] text-textMain z-50 transition-all duration-300'><div class='max-w-7xl mx-auto flex items-center justify-between p-6 lg:p-8'><a href='index.html' class='text-2xl font-heading font-bold text-primary'>Test Biz</a><button class='lg:hidden text-textMain hover:text-primary transition' aria-label='Toggle Menu'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'></path></svg></button><div class='hidden lg:flex space-x-6'><a href='index.html' class='text-textMuted hover:text-primary transition'>Home</a><a href='services.html' class='text-textMuted hover:text-primary transition'>Services</a><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a><a href='contact.html' class='text-primary font-bold'>Contact</a></div><a href='contact.html' class='hidden lg:inline-block bg-primary text-surface px-5 py-2 rounded-md shadow-lg hover:bg-ctaHover transition-all duration-300'>Get in Touch</a></div><div class='lg:hidden absolute top-16 left-0 w-full bg-surfaceAlt hidden'><div class='flex flex-col space-y-4 p-6'><a href='index.html' class='text-textMuted hover:text-primary transition'>Home</a><a href='services.html' class='text-textMuted hover:text-primary transition'>Services</a><a href='about.html' class='text-textMuted hover:text-primary transition'>About</a><a href='contact.html' class='text-primary font-bold'>Contact</a></div></div></nav>
-<main>
-
-  <!-- Contact Form Section -->
-  <section id="contact-form" class="bg-surface min-h-screen py-24 px-6 md:px-12 lg:px-24 relative" data-aos="fade-up">
-    <div class="absolute inset-0 -z-10">
-      <div class="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-primary via-accent to-secondary rounded-full blur-3xl opacity-30 animate-pulse"></div>
-      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-gradient-to-br from-accent via-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse"></div>
-    </div>
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl md:text-5xl font-heading text-center" style="color: #1a1a1a;" data-aos="fade-up" data-aos-duration="1000">
-        Contact Test Biz Today
+<nav class="fixed top-0 w-full backdrop-blur-xl bg-[rgba(255,255,255,0.8)] shadow-md z-50 transition-all duration-300" id="main-nav"> <div class="container mx-auto flex items-center justify-between py-4 px-6"> <a href="" class="text-primary font-heading text-xl">Test Biz</a> <button class="lg:hidden text-primary" id="mobile-menu-toggle">☰</button> <ul class="hidden lg:flex space-x-6 items-center"> <li><a href="" class="{{ACTIVE:home}}">Home</a></li> <li><a href="about.html" class="text-textMuted hover:text-primary transition">About</a></li> <li><a href="services.html" class="text-textMuted hover:text-primary transition">Services</a></li> <li><a href="contact.html" class="text-primary font-bold">Contact</a></li> </ul> <a href="contact.html" class="bg-cta text-white py-2 px-4 rounded-lg hover:bg-ctaHover shadow-lg transition-all">Get Started</a> </div> <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-[rgba(255,255,255,0.9)] backdrop-blur-xl flex flex-col items-center justify-center space-y-6"> <a href="" class="{{ACTIVE:home}}">Home</a> <a href="about.html" class="text-textMuted hover:text-primary transition">About</a> <a href="services.html" class="text-textMuted hover:text-primary transition">Services</a> <a href="contact.html" class="text-primary font-bold">Contact</a> <a href="contact.html" class="bg-cta text-white py-2 px-4 rounded-lg hover:bg-ctaHover shadow-lg transition-all">Get Started</a> </div> </nav>
+<main class="bg-surface font-body text-textMain">
+  <!-- Contact Intro Section -->
+  <section id="contact-intro" class="bg-surfaceAlt py-24 md:py-32" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-6" style="color: #1a1a1a;">
+        Test Biz - Get in Touch
       </h1>
-      <p class="text-lg font-body text-center" style="color: #333333;" data-aos="fade-up" data-aos-delay="200">
-        We'd love to hear from you. Reach out for a consultation or any inquiries!
+      <p class="text-lg md:text-xl mb-8" style="color: #4d4d4d;">
+        Have questions or want to explore how Test Biz can help you innovate? Reach out to us today.
       </p>
-      <form class="bg-surfaceAlt rounded-xl p-8 shadow-lg" action="submit" method="POST" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label for="name" class="font-body" style="color: #1a1a1a;">Name</label>
-            <input type="text" id="name" name="name" class="w-full mt-2 p-3 bg-surface rounded-lg border" style="border-color: #333333;" placeholder="Your Name" required>
-          </div>
-          <div>
-            <label for="email" class="font-body" style="color: #1a1a1a;">Email</label>
-            <input type="email" id="email" name="email" class="w-full mt-2 p-3 bg-surface rounded-lg border" style="border-color: #333333;" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="mt-6">
-          <label for="phone" class="font-body" style="color: #1a1a1a;">Phone</label>
-          <input type="text" id="phone" name="phone" class="w-full mt-2 p-3 bg-surface rounded-lg border" style="border-color: #333333;" placeholder="Your Phone Number" required>
-        </div>
-        <div class="mt-6">
-          <label for="message" class="font-body" style="color: #1a1a1a;">Message</label>
-          <textarea id="message" name="message" rows="4" class="w-full mt-2 p-3 bg-surface rounded-lg border" style="border-color: #333333;" placeholder="Your Message..." required></textarea>
-        </div>
-        <div class="mt-6 text-center">
-          <button type="submit" class="px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-heading rounded-lg hover:scale-105 transition-transform" style="background-color: #004085; color: #ffffff;">
-            Send My Message
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <!-- Location Map Section -->
-  <section id="location-map" class="bg-surfaceAlt py-24 px-6 md:px-12 lg:px-24 relative" data-aos="fade-up">
-    <div class="absolute inset-0 -z-10">
-      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-br from-accent via-secondary to-primary rounded-full blur-3xl opacity-30 animate-pulse"></div>
-      <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-br from-secondary via-accent to-primary rounded-full blur-3xl opacity-30 animate-pulse"></div>
-    </div>
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-heading" style="color: #1a1a1a;" data-aos="fade-up" data-aos-duration="1000">
-        Find Us Here
-      </h2>
-      <p class="font-body" style="color: #333333;" data-aos="fade-up" data-aos-delay="200">
-        Our office is located in the heart of innovation.
-      </p>
-      <iframe class="w-full h-96 rounded-xl shadow-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531858!3d-37.81621897975144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1635561234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="zoom-in" data-aos-delay="300" title="Google Map showing Melbourne, Australia"></iframe>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="bg-surface py-24 px-6 md:px-12 lg:px-24 relative" data-aos="fade-up">
-    <div class="absolute inset-0 -z-10">
-      <div class="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-br from-primary via-accent to-surfaceAlt rounded-full blur-3xl opacity-30 animate-pulse"></div>
-      <div class="absolute bottom-1/3 right-0 w-80 h-80 bg-gradient-to-br from-accent via-primary to-surfaceAlt rounded-full blur-3xl opacity-30 animate-pulse"></div>
-    </div>
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-heading" style="color: #1a1a1a;" data-aos="fade-up" data-aos-duration="1000">
-        Frequently Asked Questions
-      </h2>
-      <div class="space-y-8">
-        <div class="p-6 bg-surfaceAlt rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
-          <h3 class="text-xl font-heading" style="color: #1a1a1a;">What services do you offer?</h3>
-          <p class="font-body" style="color: #333333; margin-top: 0.5rem;">We provide cutting-edge tech solutions, including AI integration, cloud services, and custom software development tailored to your business needs.</p>
-        </div>
-        <div class="p-6 bg-surfaceAlt rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-heading" style="color: #1a1a1a;">How do I schedule a consultation?</h3>
-          <p class="font-body" style="color: #333333; margin-top: 0.5rem;">Simply fill out the contact form above, and we’ll get back to you within one business day to schedule a consultation at your convenience.</p>
-        </div>
-        <div class="p-6 bg-surfaceAlt rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-heading" style="color: #1a1a1a;">Where is your office located?</h3>
-          <p class="font-body" style="color: #333333; margin-top: 0.5rem;">We are centrally located in Melbourne, Australia, making it easy for clients to visit us. Check the map above for our exact location.</p>
-        </div>
+      <div class="space-y-4">
+        <p>Email us at <a href="mailto:test@example.com" class="text-accent underline hover:text-cta" style="color: #0056b3;">test@example.com</a></p>
+        <p>Call us at <a href="tel:+1234567890" class="text-accent underline hover:text-cta" style="color: #0056b3;">+1 (234) 567-890</a></p>
       </div>
     </div>
   </section>
 
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="bg-surface py-24 md:py-32" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl md:text-5xl font-heading text-center mb-12 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent" style="color: #1a1a1a;">
+        Send Us a Message
+      </h2>
+      <form action="submit.html" method="POST" class="space-y-6 max-w-3xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1" style="color: #4d4d4d;">Name</label>
+            <input type="text" id="name" name="name" class="w-full p-3 border border-surfaceAlt rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Your Full Name" required />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1" style="color: #4d4d4d;">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-3 border border-surfaceAlt rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Your Email Address" required />
+          </div>
+        </div>
+        <div>
+          <label for="company" class="block text-sm font-medium mb-1" style="color: #4d4d4d;">Company</label>
+          <input type="text" id="company" name="company" class="w-full p-3 border border-surfaceAlt rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Your Company Name" />
+        </div>
+        <div>
+          <label for="subject" class="block text-sm font-medium mb-1" style="color: #4d4d4d;">Subject</label>
+          <input type="text" id="subject" name="subject" class="w-full p-3 border border-surfaceAlt rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Subject of Your Message" required />
+        </div>
+        <div>
+          <label for="message" class="block text-sm font-medium mb-1" style="color: #4d4d4d;">Message</label>
+          <textarea id="message" name="message" rows="5" class="w-full p-3 border border-surfaceAlt rounded-lg focus:outline-none focus:ring-2 focus:ring-accent" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="w-full py-4 px-8 bg-cta text-white font-bold rounded-full transition hover:bg-ctaHover focus:outline-none focus:ring-4 focus:ring-cta focus:ring-opacity-50" style="background-color: #004080;">
+          Send My Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section id="map" class="bg-surfaceAlt py-24 md:py-32" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-heading bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-8" style="color: #1a1a1a;">
+        Find Us Here
+      </h2>
+      <p class="text-lg md:text-xl mb-8" style="color: #4d4d4d;">
+        Visit our office at the heart of innovation. We look forward to welcoming you.
+      </p>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093744!2d144.9537353153164!3d-37.81627974202157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779f079b3b94d7!2sTest%20Biz%20HQ!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          class="rounded-lg"
+          title="Test Biz HQ Location"
+        ></iframe>
+      </div>
+    </div>
+  </section>
 </main>
-<footer class='bg-surfaceAlt text-textMuted py-12'><div class='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6'><div><h3 class='text-lg font-heading text-primary mb-4'>Test Biz</h3><p>Innovating Tomorrow, Today</p></div><div><h3 class='text-lg font-heading text-primary mb-4'>Quick Links</h3><ul class='space-y-2'><li><a href='index.html' class='hover:text-primary transition'>Home</a></li><li><a href='services.html' class='hover:text-primary transition'>Services</a></li><li><a href='about.html' class='hover:text-primary transition'>About</a></li><li><a href='contact.html' class='hover:text-primary transition'>Contact</a></li></ul></div><div><h3 class='text-lg font-heading text-primary mb-4'>Follow Us</h3><ul class='flex space-x-4'><li><a href='#' aria-label='Twitter' class='hover:text-primary transition'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M22 4.01c-.77.36-1.6.6-2.46.71a4.16 4.16 0 001.84-2.3 8.27 8.27 0 01-2.63 1.01 4.13 4.13 0 00-7.04 3.76A11.72 11.72 0 013 3.8a4.13 4.13 0 001.28 5.51A4.1 4.1 0 012.8 8.7v.05c0 1.93 1.37 3.54 3.19 3.91a4.15 4.15 0 01-1.87.07 4.13 4.13 0 003.85 2.86A8.3 8.3 0 012 19.29a11.68 11.68 0 006.29 1.84c7.55 0 11.67-6.25 11.67-11.67v-.53a8.3 8.3 0 002.05-2.11'></path></svg></a></li><li><a href='#' aria-label='LinkedIn' class='hover:text-primary transition'><svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='currentColor' class='w-6 h-6'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M16 8a6 6 0 00-6 6v6M4 8a6 6 0 00-6 6v6M16 8a6 6 0 016 6v6M4 8a6 6 0 016 6v6'></path></svg></a></li></ul></div></div><div class='text-center mt-8'><p>&copy; 2026 Test Biz. Built by <a href='https://ajayadesign.github.io' class='text-primary hover:text-ctaHover transition'>AjayaDesign</a>.</p></div></footer>
-<script>document.querySelector('nav button').addEventListener('click', function() { const menu = document.querySelector('nav .absolute'); menu.classList.toggle('hidden'); });</script>
-<script>document.querySelector('nav button').addEventListener('click', function() { const menu = document.querySelector('nav .absolute'); menu.classList.toggle('hidden'); });</script>
+<footer class="bg-surfaceAlt py-8 px-6"> <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6"> <div> <h3 class="text-primary font-heading text-lg mb-4">Test Biz</h3> <p class="text-textMuted">Innovating the Future, Today</p> </div> <div> <h3 class="text-primary font-heading text-lg mb-4">Quick Links</h3> <ul class="space-y-2"> <li><a href="" class="text-textMuted hover:text-primary transition">Home</a></li> <li><a href="about.html" class="text-textMuted hover:text-primary transition">About</a></li> <li><a href="services.html" class="text-textMuted hover:text-primary transition">Services</a></li> <li><a href="contact.html" class="text-textMuted hover:text-primary transition">Contact</a></li> </ul> </div> <div> <h3 class="text-primary font-heading text-lg mb-4">Follow Us</h3> <ul class="space-y-2"> <li><a href="https://twitter.com" class="text-textMuted hover:text-primary transition">Twitter</a></li> <li><a href="https://linkedin.com" class="text-textMuted hover:text-primary transition">LinkedIn</a></li> <li><a href="https://facebook.com" class="text-textMuted hover:text-primary transition">Facebook</a></li> </ul> </div> </div> <div class="text-center text-textMuted mt-8"> <p>&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="text-primary hover:underline">AjayaDesign</a>.</p> </div> </footer>
+<script>document.getElementById('mobile-menu-toggle').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
+<script>document.getElementById('mobile-menu-toggle').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });</script>
 <script>/* js-safety-guard */
 try {
-document.querySelector('nav button').addEventListener('click', function() { const menu = document.querySelector('nav .absolute'); menu.classList.toggle('hidden'); });
+document.getElementById('mobile-menu-toggle').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });
 } catch(e) { console.warn('Script error:', e); }
 </script>
 <script>
