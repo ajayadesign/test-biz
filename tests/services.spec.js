@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const AxeBuilder = require('@axe-core/playwright').default;
 
-test.describe('Our Services page (services)', () => {
+test.describe('Services page (services)', () => {
   test('loads and has content', async ({ page }) => {
     await page.goto('/services.html');
     await expect(page.locator('body')).not.toBeEmpty();
