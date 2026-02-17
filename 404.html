@@ -6,10 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#007bbb', cta: '#007ACC', ctaHover: '#0099FF', surface: '#F5F7FA', surfaceAlt: '#E1E8ED', textMain: '#0D1F2D', textMuted: '#7A869A' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#0F172A', accent: '#0e79c7', cta: '#0e79c7', ctaHover: '#3BA9F1', surface: '#1E293B', surfaceAlt: '#334155', textMain: '#F8FAFC', textMuted: '#94A3B8' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -44,7 +44,33 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class="fixed top-0 w-full backdrop-blur-xl bg-[rgba(255,255,255,0.8)] shadow-md z-50 transition-all duration-300" id="main-nav"> <div class="container mx-auto flex items-center justify-between py-4 px-6"> <a href="" class="text-primary font-heading text-xl">Test Biz</a> <button class="lg:hidden text-primary" id="mobile-menu-toggle">☰</button> <ul class="hidden lg:flex space-x-6 items-center"> <li><a href="" class="{{ACTIVE:home}}">Home</a></li> <li><a href="about.html" class="{{ACTIVE:about}}">About</a></li> <li><a href="services.html" class="{{ACTIVE:services}}">Services</a></li> <li><a href="contact.html" class="{{ACTIVE:contact}}">Contact</a></li> </ul> <a href="contact.html" class="bg-cta text-white py-2 px-4 rounded-lg hover:bg-ctaHover shadow-lg transition-all">Get Started</a> </div> <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-screen bg-[rgba(255,255,255,0.9)] backdrop-blur-xl flex flex-col items-center justify-center space-y-6"> <a href="" class="{{ACTIVE:home}}">Home</a> <a href="about.html" class="{{ACTIVE:about}}">About</a> <a href="services.html" class="{{ACTIVE:services}}">Services</a> <a href="contact.html" class="{{ACTIVE:contact}}">Contact</a> <a href="contact.html" class="bg-cta text-white py-2 px-4 rounded-lg hover:bg-ctaHover shadow-lg transition-all">Get Started</a> </div> </nav>
+<nav class="fixed top-0 left-0 w-full backdrop-blur-xl bg-[rgba(30,41,59,0.8)] shadow-lg transition-all duration-300 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <a href="index.html" class="text-xl font-heading text-primary">Test Biz</a>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="index.html" class="{{ACTIVE:home}}">Home</a></li>
+      <li><a href="about.html" class="{{ACTIVE:about}}">About</a></li>
+      <li><a href="services.html" class="{{ACTIVE:services}}">Services</a></li>
+      <li><a href="case-studies.html" class="{{ACTIVE:case-studies}}">Case Studies</a></li>
+      <li><a href="contact.html" class="{{ACTIVE:contact}}">Contact</a></li>
+    </ul>
+    <button class="hidden md:block bg-cta text-textMain px-4 py-2 rounded-lg hover:bg-ctaHover transition shadow-md">Get Started</button>
+    <button class="md:hidden text-textMain focus:outline-none" id="hamburgerMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="hidden absolute top-full left-0 w-full bg-[rgba(30,41,59,0.95)] backdrop-blur-xl shadow-lg">
+    <ul class="flex flex-col space-y-4 px-6 py-4">
+      <li><a href="index.html" class="{{ACTIVE:home}}">Home</a></li>
+      <li><a href="about.html" class="{{ACTIVE:about}}">About</a></li>
+      <li><a href="services.html" class="{{ACTIVE:services}}">Services</a></li>
+      <li><a href="case-studies.html" class="{{ACTIVE:case-studies}}">Case Studies</a></li>
+      <li><a href="contact.html" class="{{ACTIVE:contact}}">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 <main class="pt-24 min-h-[60vh] flex items-center justify-center px-6">
   <div class="text-center max-w-xl">
     <h1 class="font-heading text-6xl font-bold text-primary mb-4">404</h1>
@@ -54,10 +80,44 @@
     </a>
   </div>
 </main>
-<footer class="bg-surfaceAlt py-8 px-6"> <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6"> <div> <h3 class="text-primary font-heading text-lg mb-4">Test Biz</h3> <p class="text-textMuted">Innovating the Future, Today</p> </div> <div> <h3 class="text-primary font-heading text-lg mb-4">Quick Links</h3> <ul class="space-y-2"> <li><a href="" class="text-textMuted hover:text-primary transition">Home</a></li> <li><a href="about.html" class="text-textMuted hover:text-primary transition">About</a></li> <li><a href="services.html" class="text-textMuted hover:text-primary transition">Services</a></li> <li><a href="contact.html" class="text-textMuted hover:text-primary transition">Contact</a></li> </ul> </div> <div> <h3 class="text-primary font-heading text-lg mb-4">Follow Us</h3> <ul class="space-y-2"> <li><a href="https://twitter.com" class="text-textMuted hover:text-primary transition">Twitter</a></li> <li><a href="https://linkedin.com" class="text-textMuted hover:text-primary transition">LinkedIn</a></li> <li><a href="https://facebook.com" class="text-textMuted hover:text-primary transition">Facebook</a></li> </ul> </div> </div> <div class="text-center text-textMuted mt-8"> <p>&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="text-primary hover:underline">AjayaDesign</a>.</p> </div> </footer>
+<footer class="bg-surfaceAlt text-textMuted py-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+    <div>
+      <h3 class="text-xl font-heading text-textMain mb-4">About Us</h3>
+      <p>Revolutionizing Industries with Cutting-Edge Code</p>
+    </div>
+    <div>
+      <h3 class="text-xl font-heading text-textMain mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:text-primary">Home</a></li>
+        <li><a href="about.html" class="hover:text-primary">About</a></li>
+        <li><a href="services.html" class="hover:text-primary">Services</a></li>
+        <li><a href="case-studies.html" class="hover:text-primary">Case Studies</a></li>
+        <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-heading text-textMain mb-4">Follow Us</h3>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-primary">Twitter</a></li>
+        <li><a href="#" class="hover:text-primary">LinkedIn</a></li>
+        <li><a href="#" class="hover:text-primary">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-sm">
+    <p>&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="hover:text-primary">AjayaDesign</a>.</p>
+  </div>
+</footer>
 <script>/* js-safety-guard */
 try {
-document.getElementById('mobile-menu-toggle').addEventListener('click', function() { const menu = document.getElementById('mobile-menu'); menu.classList.toggle('hidden'); });
+
+  const hamburgerMenu = document.getElementById('hamburgerMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburgerMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
 } catch(e) { console.warn('Script error:', e); }
 </script>
 </body>
