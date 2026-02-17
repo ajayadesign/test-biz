@@ -6,10 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#1A1A40', accent: '#5D5FEF', cta: '#5D5FEF', ctaHover: '#8A8BFF', surface: '#1E1E2C', surfaceAlt: '#2A2A40', textMain: '#FFFFFF', textMuted: '#A3A3C2' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#00862b', cta: '#00862b', ctaHover: '#58D68D', surface: '#1C1C1C', surfaceAlt: '#121212', textMain: '#FFFFFF', textMuted: '#B0BEC5' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -44,7 +44,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,44,0.8)] py-4 px-8 flex items-center justify-between transition-all duration-300 ease-in-out'> <div class='text-primary font-heading text-lg'>Test Biz</div> <ul class='hidden md:flex space-x-6'> <li><a href='index.html' class='{{ACTIVE:index}}'>Home</a></li> <li><a href='about.html' class='{{ACTIVE:about}}'>About</a></li> <li><a href='solutions.html' class='{{ACTIVE:solutions}}'>Solutions</a></li> <li><a href='contact.html' class='{{ACTIVE:contact}}'>Contact</a></li> </ul> <button class='bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition shadow-lg'>Get Started</button> <button class='md:hidden text-textMain focus:outline-none' id='mobile-menu-toggle'>☰</button> </nav> <div id='mobile-menu' class='hidden fixed top-0 left-0 w-full h-full bg-[rgba(30,30,44,0.95)] backdrop-blur-xl'> <ul class='flex flex-col items-center justify-center h-full space-y-6'> <li><a href='index.html' class='{{ACTIVE:index}} text-2xl'>Home</a></li> <li><a href='about.html' class='{{ACTIVE:about}} text-2xl'>About</a></li> <li><a href='solutions.html' class='{{ACTIVE:solutions}} text-2xl'>Solutions</a></li> <li><a href='contact.html' class='{{ACTIVE:contact}} text-2xl'>Contact</a></li> </ul> </div>
+<nav class="fixed top-0 w-full backdrop-blur-xl bg-[rgba(28,28,28,0.8)] py-4 px-6 flex items-center justify-between transition-all duration-300 ease-in-out" id="mainNav"> <div class="flex items-center"> <a href="" class="text-primary font-heading text-xl">Test Biz</a> </div> <div class="hidden md:flex space-x-4"> <a href="" class="{{ACTIVE:home}}">Home</a> <a href="about.html" class="{{ACTIVE:about}}">About</a> <a href="products.html" class="{{ACTIVE:products}}">Products</a> <a href="contact.html" class="{{ACTIVE:contact}}">Contact</a> </div> <button id="mobileMenuToggle" class="md:hidden text-textMuted hover:text-primary transition">☰</button> <a href="contact.html" class="bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition-shadow shadow-lg shadow-accent/50">Contact Us</a> </nav>
 <main class="pt-24 min-h-[60vh] flex items-center justify-center px-6">
   <div class="text-center max-w-xl">
     <h1 class="font-heading text-6xl font-bold text-primary mb-4">404</h1>
@@ -54,10 +54,10 @@
     </a>
   </div>
 </main>
-<footer class='bg-surfaceAlt py-12 px-8 text-textMuted'> <div class='grid grid-cols-1 md:grid-cols-3 gap-8'> <div> <h3 class='text-primary font-heading text-lg mb-4'>Test Biz</h3> <p class='text-textMuted'>Innovating Tomorrow, Today</p> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Quick Links</h4> <ul> <li><a href='index.html' class='hover:text-primary transition'>Home</a></li> <li><a href='about.html' class='hover:text-primary transition'>About</a></li> <li><a href='solutions.html' class='hover:text-primary transition'>Solutions</a></li> <li><a href='contact.html' class='hover:text-primary transition'>Contact</a></li> </ul> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Follow Us</h4> <ul class='flex space-x-4'> <li><a href='https://twitter.com' class='hover:text-primary transition'>Twitter</a></li> <li><a href='https://linkedin.com' class='hover:text-primary transition'>LinkedIn</a></li> <li><a href='https://github.com' class='hover:text-primary transition'>GitHub</a></li> </ul> </div> </div> <div class='mt-8 text-center'> <p>Built by <a href='https://ajayadesign.github.io' class='text-primary hover:underline'>AjayaDesign</a></p> <p>© 2026 Test Biz</p> </div> </footer>
+<footer class="bg-surfaceAlt text-textMuted py-8 px-6"> <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> <div> <h2 class="text-primary font-heading text-lg">Test Biz</h2> <p class="mt-2">Innovating the Future, Today</p> </div> <div> <h3 class="text-primary font-heading text-md">Quick Links</h3> <ul class="space-y-2 mt-2"> <li><a href="">Home</a></li> <li><a href="about.html">About</a></li> <li><a href="products.html">Products</a></li> <li><a href="contact.html">Contact</a></li> </ul> </div> <div> <h3 class="text-primary font-heading text-md">Follow Us</h3> <div class="flex space-x-4 mt-2"> <a href="https://twitter.com" class="hover:text-primary">Twitter</a> <a href="https://linkedin.com" class="hover:text-primary">LinkedIn</a> <a href="https://facebook.com" class="hover:text-primary">Facebook</a> </div> </div> </div> <div class="mt-6 text-center"> <p>&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="hover:text-primary">AjayaDesign</a>.</p> </div> </footer>
 <script>/* js-safety-guard */
 try {
- const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); 
+ const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); 
 } catch(e) { console.warn('Script error:', e); }
 </script>
 </body>

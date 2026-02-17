@@ -10,7 +10,7 @@ test.describe('Site Integration', () => {
     await expect(page.locator('nav')).toBeVisible();
     await expect(page.locator('footer')).toBeVisible();
 
-    await page.goto('/solutions.html');
+    await page.goto('/products.html');
     await expect(page.locator('nav')).toBeVisible();
     await expect(page.locator('footer')).toBeVisible();
 
@@ -25,8 +25,8 @@ test.describe('Site Integration', () => {
     if (await link_index.count()) await expect(link_index).toBeVisible();
     const link_about = page.locator('nav a[href="about.html"]');
     if (await link_about.count()) await expect(link_about).toBeVisible();
-    const link_solutions = page.locator('nav a[href="solutions.html"]');
-    if (await link_solutions.count()) await expect(link_solutions).toBeVisible();
+    const link_products = page.locator('nav a[href="products.html"]');
+    if (await link_products.count()) await expect(link_products).toBeVisible();
     const link_contact = page.locator('nav a[href="contact.html"]');
     if (await link_contact.count()) await expect(link_contact).toBeVisible();
   });

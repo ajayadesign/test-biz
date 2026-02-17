@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script>
-    tailwind.config = { theme: { extend: { colors: { primary: '#1A1A40', accent: '#5D5FEF', cta: '#5D5FEF', ctaHover: '#8A8BFF', surface: '#1E1E2C', surfaceAlt: '#2A2A40', textMain: '#FFFFFF', textMuted: '#A3A3C2' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
+    tailwind.config = { theme: { extend: { colors: { primary: '#0D1F2D', accent: '#00862b', cta: '#00862b', ctaHover: '#58D68D', surface: '#1C1C1C', surfaceAlt: '#121212', textMain: '#FFFFFF', textMuted: '#B0BEC5' }, fontFamily: { heading: ['Space Grotesk'], body: ['Inter'] } } } }
   </script>
   <style>
     html { scroll-behavior: smooth; }
@@ -43,95 +43,112 @@
   </style>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <title>About Us — Test Biz</title>
-  <meta name="description" content="Establish credibility and share the company's mission, vision, and story.">
+  <meta name="description" content="Tell the story of the company, establish credibility, and build trust.">
   <meta property="og:title" content="About Us — Test Biz">
-  <meta property="og:description" content="Establish credibility and share the company's mission, vision, and story.">
+  <meta property="og:description" content="Tell the story of the company, establish credibility, and build trust.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
 
 </head>
 <body class="bg-surface text-textMain font-body antialiased overflow-x-hidden">
-<nav class='fixed top-0 w-full backdrop-blur-xl bg-[rgba(30,30,44,0.8)] py-4 px-8 flex items-center justify-between transition-all duration-300 ease-in-out'> <div class='text-primary font-heading text-lg'>Test Biz</div> <ul class='hidden md:flex space-x-6'> <li><a href='index.html' class='text-textMuted hover:text-primary transition'>Home</a></li> <li><a href='about.html' class='text-primary font-bold'>About</a></li> <li><a href='solutions.html' class='text-textMuted hover:text-primary transition'>Solutions</a></li> <li><a href='contact.html' class='text-textMuted hover:text-primary transition'>Contact</a></li> </ul> <button class='bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition shadow-lg'>Get Started</button> <button class='md:hidden text-textMain focus:outline-none' id='mobile-menu-toggle'>☰</button> </nav>
-<main>
-
-  <!-- Mission Section -->
-  <section id="mission" class="min-h-screen bg-surface flex items-center px-6 md:px-12 lg:px-24 py-16" data-aos="fade-up">
-    <div class="relative">
-      <div class="absolute -z-10 inset-0 bg-gradient-to-br from-primary via-accent to-secondary blur-3xl opacity-30 animate-pulse"></div>
-      <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-heading font-bold" data-aos="fade-up" data-aos-duration="1000" style="color: #000000;">Test Biz</h1>
-        <p class="mt-6 text-lg md:text-xl font-body" data-aos="fade-up" data-aos-delay="200" style="color: #4a4a4a;">
-          At Test Biz, we push the boundaries of technology to create solutions that shape the future. Our mission is to empower businesses to thrive in an ever-evolving world by delivering cutting-edge innovations.
-        </p>
-      </div>
+<nav class="fixed top-0 w-full backdrop-blur-xl bg-[rgba(28,28,28,0.8)] py-4 px-6 flex items-center justify-between transition-all duration-300 ease-in-out" id="mainNav"> <div class="flex items-center"> <a href="" class="text-primary font-heading text-xl">Test Biz</a> </div> <div class="hidden md:flex space-x-4"> <a href="" class="{{ACTIVE:home}}">Home</a> <a href="about.html" class="text-primary font-bold">About</a> <a href="products.html" class="text-textMuted hover:text-primary transition">Products</a> <a href="contact.html" class="text-textMuted hover:text-primary transition">Contact</a> </div> <button id="mobileMenuToggle" class="md:hidden text-textMuted hover:text-primary transition">☰</button> <a href="contact.html" class="bg-cta text-surface px-4 py-2 rounded-lg hover:bg-ctaHover transition-shadow shadow-lg shadow-accent/50">Contact Us</a> </nav>
+<main class="bg-surface font-body text-textMain">
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-accent to-secondary" data-aos="fade-up">
+    <div class="absolute inset-0">
+      <div class="absolute -top-10 -left-10 w-72 h-72 bg-accent blur-3xl opacity-50 animate-pulse"></div>
+      <div class="absolute top-20 right-20 w-96 h-96 bg-primary blur-3xl opacity-50 animate-pulse"></div>
+    </div>
+    <div class="relative z-10 max-w-3xl text-center">
+      <h1 class="text-4xl md:text-6xl font-heading" style="color: #0d0d0d;" data-aos="fade-up" data-aos-duration="1000">Test Biz - Innovating the Future, Today</h1>
+      <p class="mt-4 text-lg md:text-xl" style="color: #333333;" data-aos="fade-up" data-aos-delay="200">Driving cutting-edge technology solutions to empower businesses and shape the future of innovation.</p>
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section id="team" class="bg-surfaceAlt py-16 md:py-24" data-aos="fade-up">
-    <div class="container mx-auto px-6 md:px-12">
-      <h2 class="text-3xl md:text-5xl font-heading font-bold text-center" style="color: #000000;">Our Leadership Team</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <article class="text-center hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1502767089025-6572583495b0?w=800&q=80" alt="Portrait of CEO Jane Doe, a visionary leader with two decades of experience in technology and leadership." class="mx-auto rounded-full w-32 h-32 object-cover">
-          <h3 class="mt-6 text-xl font-heading font-bold" style="color: #000000;">Jane Doe</h3>
-          <p class="mt-2 font-body" style="color: #4a4a4a;">CEO & Visionary Leader</p>
-          <p class="mt-4 font-body" style="color: #4a4a4a;">Driving innovation with two decades of experience in technology and leadership.</p>
+  <!-- Mission Statement Section -->
+  <section id="mission-statement" class="bg-surfaceAlt py-24 md:py-32 px-6 md:px-12" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-heading" style="color: #0d0d0d; margin-bottom: 1.5rem;">Our Mission</h2>
+      <p class="text-lg md:text-xl" style="color: #0d0d0d;">At Test Biz, our mission is to pioneer technological innovation that empowers businesses to stay ahead in an ever-evolving digital landscape. We are dedicated to crafting future-proof solutions that solve today's challenges while anticipating tomorrow's opportunities.</p>
+    </div>
+  </section>
+
+  <!-- Team Introduction Section -->
+  <section id="team-introduction" class="bg-surface py-24 md:py-32 px-6 md:px-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-center text-3xl md:text-5xl font-heading" style="color: #0d0d0d; margin-bottom: 3rem;">Meet Our Leadership</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <article class="bg-surfaceAlt p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=800&q=80" alt="Portrait of Sarah Johnson, CEO and Visionary Leader" class="w-full h-60 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-heading" style="color: #0d0d0d;">Sarah Johnson</h3>
+          <p style="color: #333333;">CEO & Visionary Leader</p>
+          <p class="mt-2" style="color: #0d0d0d;">With over 15 years of experience in leading tech innovations, Sarah is passionate about driving change and delivering transformative solutions.</p>
         </article>
-        <article class="text-center hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1519340333755-56e9c3eeb5e9?w=800&q=80" alt="Portrait of CTO John Smith, an expert in AI and cloud solutions." class="mx-auto rounded-full w-32 h-32 object-cover">
-          <h3 class="mt-6 text-xl font-heading font-bold" style="color: #000000;">John Smith</h3>
-          <p class="mt-2 font-body" style="color: #4a4a4a;">CTO & Tech Strategist</p>
-          <p class="mt-4 font-body" style="color: #4a4a4a;">Architecting the future with expertise in AI and cloud solutions.</p>
+        <!-- Team Member 2 -->
+        <article class="bg-surfaceAlt p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&q=80" alt="Portrait of Michael Lee, CTO and Innovation Expert" class="w-full h-60 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-heading" style="color: #0d0d0d;">Michael Lee</h3>
+          <p style="color: #333333;">CTO & Innovation Expert</p>
+          <p class="mt-2" style="color: #0d0d0d;">A technology strategist with a knack for turning ideas into pioneering products, Michael leads our product development team.</p>
         </article>
-        <article class="text-center hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1603415526909-6e80ab3cd3f2?w=800&q=80" alt="Portrait of COO Emily Davis, an expert in operational excellence and seamless execution." class="mx-auto rounded-full w-32 h-32 object-cover">
-          <h3 class="mt-6 text-xl font-heading font-bold" style="color: #000000;">Emily Davis</h3>
-          <p class="mt-2 font-body" style="color: #4a4a4a;">COO & Operational Expert</p>
-          <p class="mt-4 font-body" style="color: #4a4a4a;">Ensuring seamless execution and operational excellence.</p>
+        <!-- Team Member 3 -->
+        <article class="bg-surfaceAlt p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?w=800&q=80" alt="Portrait of Emma Davis, COO and Operations Leader" class="w-full h-60 object-cover rounded-lg mb-4">
+          <h3 class="text-xl font-heading" style="color: #0d0d0d;">Emma Davis</h3>
+          <p style="color: #333333;">COO & Operations Leader</p>
+          <p class="mt-2" style="color: #0d0d0d;">Emma ensures seamless operations and fosters a culture of excellence across all our teams and projects.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Timeline Section -->
-  <section id="timeline" class="bg-surface py-16 md:py-24" data-aos="fade-up">
-    <div class="container mx-auto px-6 md:px-12">
-      <h2 class="text-3xl md:text-5xl font-heading font-bold text-center" style="color: #000000;">Our Journey</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <article class="relative px-6 py-8 bg-surfaceAlt rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="0">
-          <h3 class="text-xl font-heading" style="color: #000000;">2010</h3>
-          <p class="mt-4 font-body" style="color: #4a4a4a;">Founded with a vision to revolutionize the tech industry.</p>
-        </article>
-        <article class="relative px-6 py-8 bg-surfaceAlt rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="text-xl font-heading" style="color: #000000;">2015</h3>
-          <p class="mt-4 font-body" style="color: #4a4a4a;">Launched our first AI-driven solution, setting a new standard.</p>
-        </article>
-        <article class="relative px-6 py-8 bg-surfaceAlt rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-xl font-heading" style="color: #000000;">2020</h3>
-          <p class="mt-4 font-body" style="color: #4a4a4a;">Expanded globally, serving over 500+ enterprise clients.</p>
-        </article>
+  <section id="timeline" class="bg-surfaceAlt py-24 md:py-32 px-6 md:px-12" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-center text-3xl md:text-5xl font-heading" style="color: #0d0d0d; margin-bottom: 3rem;">Our Journey</h2>
+      <div class="relative">
+        <div class="border-l-4 border-primary absolute h-full top-0 left-1/2 transform -translate-x-1/2"></div>
+        <div class="space-y-12">
+          <!-- Milestone 1 -->
+          <div class="relative flex justify-between items-center">
+            <div class="w-1/2 pr-8 text-right" data-aos="fade-up" data-aos-delay="0">
+              <h3 class="text-xl font-heading" style="color: #0d0d0d;">Founded in 2010</h3>
+              <p style="color: #0d0d0d;">Test Biz begins its journey with a mission to redefine business technology solutions.</p>
+            </div>
+            <div class="w-5 h-5 bg-primary rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+            <div class="w-1/2"></div>
+          </div>
+          <!-- Milestone 2 -->
+          <div class="relative flex justify-between items-center">
+            <div class="w-1/2"></div>
+            <div class="w-5 h-5 bg-primary rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+            <div class="w-1/2 pl-8" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-xl font-heading" style="color: #0d0d0d;">First Major Breakthrough in 2015</h3>
+              <p style="color: #0d0d0d;">Our AI-driven solutions revolutionized the e-commerce industry, building trust and recognition.</p>
+            </div>
+          </div>
+          <!-- Milestone 3 -->
+          <div class="relative flex justify-between items-center">
+            <div class="w-1/2 pr-8 text-right" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-xl font-heading" style="color: #0d0d0d;">Global Expansion in 2020</h3>
+              <p style="color: #0d0d0d;">We expanded globally, helping businesses across 20+ countries achieve their goals.</p>
+            </div>
+            <div class="w-5 h-5 bg-primary rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
+            <div class="w-1/2"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- CTA Section -->
-  <section id="cta" class="bg-gradient-to-br from-primary via-accent to-secondary py-16 md:py-24 text-center" data-aos="fade-up">
-    <div class="container mx-auto px-6 md:px-12">
-      <h2 class="text-3xl md:text-5xl font-heading font-bold text-white">Ready to Innovate Together?</h2>
-      <p class="mt-6 text-lg md:text-xl font-body text-white">Join countless businesses transforming their future with Test Biz. Let’s shape tomorrow, today.</p>
-      <a href="contact.html" class="mt-8 inline-block px-6 py-3 bg-cta text-white font-bold rounded-lg hover:bg-ctaHover transition" style="background-color: #0056b3; color: #ffffff;">Get In Touch</a>
-    </div>
-  </section>
-
 </main>
-<footer class='bg-surfaceAlt py-12 px-8 text-textMuted'> <div class='grid grid-cols-1 md:grid-cols-3 gap-8'> <div> <h3 class='text-primary font-heading text-lg mb-4'>Test Biz</h3> <p class='text-textMuted'>Innovating Tomorrow, Today</p> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Quick Links</h4> <ul> <li><a href='index.html' class='hover:text-primary transition'>Home</a></li> <li><a href='about.html' class='hover:text-primary transition'>About</a></li> <li><a href='solutions.html' class='hover:text-primary transition'>Solutions</a></li> <li><a href='contact.html' class='hover:text-primary transition'>Contact</a></li> </ul> </div> <div> <h4 class='text-primary font-heading text-md mb-4'>Follow Us</h4> <ul class='flex space-x-4'> <li><a href='https://twitter.com' class='hover:text-primary transition'>Twitter</a></li> <li><a href='https://linkedin.com' class='hover:text-primary transition'>LinkedIn</a></li> <li><a href='https://github.com' class='hover:text-primary transition'>GitHub</a></li> </ul> </div> </div> <div class='mt-8 text-center'> <p>Built by <a href='https://ajayadesign.github.io' class='text-primary hover:underline'>AjayaDesign</a></p> <p>© 2026 Test Biz</p> </div> </footer>
-<script> const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
-<script> const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); </script>
+<footer class="bg-surfaceAlt text-textMuted py-8 px-6"> <div class="grid grid-cols-1 md:grid-cols-3 gap-6"> <div> <h2 class="text-primary font-heading text-lg">Test Biz</h2> <p class="mt-2">Innovating the Future, Today</p> </div> <div> <h3 class="text-primary font-heading text-md">Quick Links</h3> <ul class="space-y-2 mt-2"> <li><a href="">Home</a></li> <li><a href="about.html">About</a></li> <li><a href="products.html">Products</a></li> <li><a href="contact.html">Contact</a></li> </ul> </div> <div> <h3 class="text-primary font-heading text-md">Follow Us</h3> <div class="flex space-x-4 mt-2"> <a href="https://twitter.com" class="hover:text-primary">Twitter</a> <a href="https://linkedin.com" class="hover:text-primary">LinkedIn</a> <a href="https://facebook.com" class="hover:text-primary">Facebook</a> </div> </div> </div> <div class="mt-6 text-center"> <p>&copy; 2026 Test Biz. Built by <a href="https://ajayadesign.github.io" class="hover:text-primary">AjayaDesign</a>.</p> </div> </footer>
+<script> const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); </script>
+<script> const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); </script>
 <script>/* js-safety-guard */
 try {
- const mobileMenuToggle = document.getElementById('mobile-menu-toggle'); const mobileMenu = document.getElementById('mobile-menu'); mobileMenuToggle.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); }); 
+ const menuToggle = document.getElementById('mobileMenuToggle'); const nav = document.getElementById('mainNav'); menuToggle.addEventListener('click', () => { nav.classList.toggle('open'); }); 
 } catch(e) { console.warn('Script error:', e); }
 </script>
 <script>
